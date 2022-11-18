@@ -55,7 +55,7 @@ XML은 configuration 메타 데이터를 정의하는 전통 포맷이다.
 2. `ApplicationContext` 생성 및 초기화
 3. 시스템이나 애플리케이션이 완전히 조립되고 실행 가능한 상태가 됨
 
-![img.png](img.png)
+![img.png](image/img.png)
 
 ### [1.2.1 Configuration Metadata](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans-factory-metadata)
 
@@ -89,7 +89,7 @@ MemberService memberService = ac.getBean("memberService", MemberService.class);*
 
 이 메타 데이터는 각 bean definition을 구성하는 속성(properties) 집합으로 변환된다.
 
-![img_1.png](img_1.png)
+![img_1.png](image/img_1.png)
 
 ### [1.3.1 Naming Beans](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans-beanname)
 
