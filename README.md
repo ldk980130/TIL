@@ -18,6 +18,8 @@
 - [jvm](java/jvm)
 
 ### JPA
+- [lecture](jpa/lecture)
+  - [basic](jpa/lecture/basic)
 
 ### TEST
 
