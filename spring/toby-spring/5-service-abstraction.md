@@ -12,7 +12,7 @@
 Service의 코드가 특정 데이터 엑세스 기술에 종속되는 구조를 어떻게 해결할 수 있을까? 다행히도 트랜잭션 경계 설정을 담당하는 코드는 일정한 패턴을 갖는 유사한 구조다. 추상화를 고려할 수 있다는 말이다.
 
 ### 스프링의 트랜잭션 서비스 추상화
-![img.png](transaction-abstraction.png)
+![img.png](../../image/transaction-abstraction.png)
 스프링이 제공하는 트랜잭션 경계설정을 위한 추상 인터페이스는 `PlatformTransactionManager`다. `PlatformTransactionManager`에서는 `getTransaction()` 메서드만 호출하기만 하면 트랜잭션을 시작할 수 있다. 이렇게 시작된 트랜잭션은 `TransactionStatus` 타입 변수에 저장된다. `TransactionStatus` 상태에 대한 조작이 필요할 때 `PlatformTransactionManager` 메서드의 파라미터로 전달해주면 된다.
 
 ## 서비스 추상화와 단일 책임 원칙
