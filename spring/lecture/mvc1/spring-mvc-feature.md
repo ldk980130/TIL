@@ -118,8 +118,8 @@ public String requestParamV4(String username, int age)
 
 ```java
 @RequestMapping("/request-param-required") 
-public String requestParamRequired(@RequestParam(required = false) String username,   
-																	 @RequestParam(required = false) int age)
+public String requestParamRequired(@RequestParam(required = false) String username,
+                                    @RequestParam(required = false) int age)
 ```
 
 - `@RequestParam.required`
@@ -140,8 +140,8 @@ public String requestParamRequired(@RequestParam(required = false) String userna
 
 ```java
 @RequestMapping("/request-param-default") 
-public String requestParamDefault(@RequestParam(defaultValue = "guest") String username,  
-																  @RequestParam(defaultValue = "-1") int age)
+public String requestParamDefault(@RequestParam(defaultValue = "guest") String username, 
+                                  @RequestParam(defaultValue = "-1") int age)
 ```
 
 - 파라미터에 값이 없는 경우 `defaultValue`를 사용하면 기본값을 적용할 수 있다.
@@ -152,8 +152,7 @@ public String requestParamDefault(@RequestParam(defaultValue = "guest") String u
 
 ```java
 @RequestMapping("/request-param-map") 
-public String requestParamMap(@RequestParam Map<String, Object> paramMap) {  
-			*log*.info("username={}, age={}", paramMap.get("username"), paramMap.get("age"));
+public String requestParamMap(@RequestParam Map<String, Object> paramMap) {
 ```
 
 - 파라미터의 값이 1개가 확실하다면 Map을 사용해도 되지만, 그렇지 않다면 MultiValueMap을 사용하자
@@ -166,8 +165,7 @@ public String requestParamMap(@RequestParam Map<String, Object> paramMap) {
 
 ```java
 @RequestMapping("/model-attribute-v1") 
-public String modelAttributeV1(@ModelAttribute HelloData helloData) {  
-				*log*.info("username={}, age={}", helloData.getUsername(), helloData.getAge());
+public String modelAttributeV1(@ModelAttribute HelloData helloData) {
 ```
 
 스프링MVC는 `@ModelAttribute`가 있으면 다음을 실행한다.
@@ -180,7 +178,6 @@ public String modelAttributeV1(@ModelAttribute HelloData helloData) {
 
 ```java
 public String modelAttributeV2(HelloData helloData) {
-				*log*.info("username={}, age={}", helloData.getUsername(), helloData.getAge());
 ```
 
 스프링은 해당 생략시 다음과 같은 규칙을 적용한다.
@@ -192,9 +189,7 @@ public String modelAttributeV2(HelloData helloData) {
 
 ```java
 @PostMapping("/add") 
-public String addItemV2(@ModelAttribute("item") Item item) {   
-				itemRepository.save(item);  
-				//model.addAttribute("item", item);
+public String addItemV2(@ModelAttribute("item") Item item) {
 ```
 
 - `@ModelAttribute`는 중요한 한 가지 기능이 더 있는데, 바로 모델(Model)에 `@ModelAttribute`로 지정한 객체를 자동으로 넣어준다.
@@ -211,7 +206,6 @@ public String addItemV2(@ModelAttribute("item") Item item) {
 ```java
 @ResponseBody @PostMapping("/request-body-string-v4") 
 public String requestBodyStringV4(@RequestBody String messageBody) throws IOException {
-				*log*.info("messageBody={}", messageBody);   return "ok"; 
 }
 ```
 
@@ -231,11 +225,9 @@ public String requestBodyStringV4(@RequestBody String messageBody) throws IOExce
 
 ```java
 @ResponseBody @PostMapping("/request-body-json-v2") 
-public String requestBodyJsonV2(@RequestBody String messageBody) throws IOException {   
-				*log*.info("messageBody={}", messageBody);  
-				HelloData data = objectMapper.readValue(messageBody, HelloData.class);  
-				*log*.info("username={}, age={}", data.getUsername(), data.getAge());   
-				return "ok"; 
+public String requestBodyJsonV2(@RequestBody String messageBody) throws IOException {
+    HelloData data = objectMapper.readValue(messageBody, HelloData.class);
+    return "ok"; 
 }
 ```
 
@@ -247,9 +239,8 @@ public String requestBodyJsonV2(@RequestBody String messageBody) throws IOExcept
 
 ```java
 @ResponseBody @PostMapping("/request-body-json-v3") 
-public String requestBodyJsonV3(@RequestBody HelloData helloData) throws IOException {   
-				*log*.info("username={}, age={}", helloData.getUsername(), helloData.getAge());   
-				return "ok"; 
+public String requestBodyJsonV3(@RequestBody HelloData helloData) throws IOException {
+    return "ok"; 
 }
 ```
 
@@ -278,9 +269,8 @@ public String requestBodyJsonV3(@RequestBody HelloData helloData) throws IOExcep
 ```java
 @ResponseBody 
 @PostMapping("/request-body-json-v5")
-public HelloData requestBodyJsonV5(@RequestBody HelloData data) {  
-				*log*.info("username={}, age={}", data.getUsername(), data.getAge());  
-				return data; 
+public HelloData requestBodyJsonV5(@RequestBody HelloData data) {
+    return data; 
 }
 ```
 
@@ -327,8 +317,8 @@ public HelloData requestBodyJsonV5(@RequestBody HelloData data) {
 ```java
 @RequestMapping("/response-view-v2") 
 public String responseViewV1(Model model) {  
-				model.addAttribute("data", "hello!");  
-				return "/response/hello"; 
+    model.addAttribute("data", "hello!");  
+    return "/response/hello"; 
 }
 ```
 
