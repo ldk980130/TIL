@@ -25,6 +25,7 @@
   - [tuning](jpa/lecture/tuning)
 
 ### TEST
+- [junit](test/junit)
 
 ### INFRA
 
