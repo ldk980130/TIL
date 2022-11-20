@@ -18,6 +18,11 @@
 - [jvm](java/jvm)
 
 ### JPA
+- [lecture](jpa/lecture)
+  - [basic](jpa/lecture/basic)
+  - [spring-data-jpa](jpa/lecture/spring-data-jpa)
+  - [querydsl](jpa/lecture/querydsl)
+  - [tuning](jpa/lecture/tuning)
 
 ### TEST
 
