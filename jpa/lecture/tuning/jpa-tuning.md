@@ -70,7 +70,7 @@ XxxToMany 관계에서는 지연 로딩 문제가 더 심각하게 발생한다.
 - (관례상 OSIV라 한다.)
 
 ### OSIV ON
-![img.png](../../image/osiv-on.png)
+![img.png](../../../image/osiv-on.png)
 - spring.jpa.open-in-view : true 기본값
   - 최신 스프링은 애플리케이션을 시작할 때 WARN을 하나 띄운다.
 
@@ -84,7 +84,7 @@ WARN 15064 ---[main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-
   예를 들어서 컨트롤러에서 외부 API를 호출하면 외부 API 대기 시간 만큼 커넥션 리소스를 반환하지 못하고, 유지해야 한다.
 
 ### OSIV OFF
-![img.png](../../image/osiv-off.png)
+![img.png](../../../image/osiv-off.png)
 - spring.jpa.open-in-view: false OSIV 종료
   - OSIV를 끄면 트랜잭션을 종료할 때 영속성 컨텍스트를 닫고, 데이터베이스 커넥션도 반환한다. 따라서 커넥션 리소스를 낭비하지 않는다.
   - OSIV를 끄면 모든 지연 로딩을 트랜잭션 안에서 처리해야 한다. 따라서 지금까지 작성한 많은 지연 로딩 코드를 트랜잭션 안으로 넣어야 하는 단점이 있다.
