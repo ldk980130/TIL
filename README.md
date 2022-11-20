@@ -28,6 +28,11 @@
 - [junit](test/junit)
 
 ### INFRA
+- [aws](infra/aws)
+  - [aws 인프라 구축 가이드](infra/aws/aws-infra-deployment-guide)
+- [linux](infra/linux)
+- [nginx](infra/nginx)
+- [message queue](infra/message-queue)
 
 ### DESIGN
 
