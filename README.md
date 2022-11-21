@@ -45,7 +45,8 @@
 - [clean architecture](design/clean-architecture)
 
 ### NETWORK
+- [http](network/http)
 
 ### OS
-
-### PROJECT
+- [deadlock](os/deadlock.md)
+- [Asynchronous, Synchronous, Blocking, Non-blocking](os/async-sync-bocking-nonblocking.md)
