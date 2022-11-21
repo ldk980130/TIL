@@ -16,6 +16,7 @@
 
 ### JAVA
 - [jvm](java/jvm)
+- [data access](java/data-access)
 
 ### JPA
 - [lecture](jpa/lecture)
@@ -34,9 +35,13 @@
 - [nginx](infra/nginx)
 - [message queue](infra/message-queue)
 
-### DESIGN
-
 ### DATABASE
+- [mysql](database/mysql)
+  - [concurrency control](database/mysql/concurrency-control)
+  - [index](database/mysql/index)
+  - [sql](database/mysql/sql)
+
+### DESIGN
 
 ### NETWORK
 
