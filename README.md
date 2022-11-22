@@ -50,3 +50,5 @@
 ### OS
 - [deadlock](os/deadlock.md)
 - [Asynchronous, Synchronous, Blocking, Non-blocking](os/async-sync-bocking-nonblocking.md)
+- [동시에 프로그램을 실행하는 방법](os/multi-process-thread.md)
+- [Context Switching](os/context-switching.md)
