@@ -17,7 +17,7 @@
     - 하지만 특정 파티션에 데이터가 너무 몰릴 수도 있다.
 
 ## Kafka Message Anatomy
-![img.png](kafka-message.png)
+![img.png](../../../image/kafka-message.png)
 - **Key** - 문자열, 숫자, 객체일 수 있다. (null일 수도 있음)
 - **value** - 메세지의 내용이며 null일 수 있다. 형식은 binary이며 포맷은 임의적이다.
 - **Compression Type** - 메세지는 압축될 수 있다. 타입은 메세지 타입에 의해 지정 된다. (`none`, `gzip`, `lz4`, `smappy`, `zstd`)
