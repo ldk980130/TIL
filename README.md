@@ -34,6 +34,7 @@
 - [linux](infra/linux)
 - [nginx](infra/nginx)
 - [message queue](infra/message-queue)
+  - [kafka](infra/message-queue/kafka)
 
 ### DATABASE
 - [mysql](database/mysql)
