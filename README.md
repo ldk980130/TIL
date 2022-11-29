@@ -56,3 +56,4 @@
 - [동시에 프로그램을 실행하는 방법](os/multi-process-thread.md)
 - [Context Switching](os/context-switching.md)
 - [CPU bound, IO bound](os/cpu-bound-io-bound.md)
+- [spinlock, mutex, semaphore](os/spinlock-mutex-semaphore.md)
