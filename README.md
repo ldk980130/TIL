@@ -17,6 +17,7 @@
 ### JAVA
 - [jvm](java/jvm)
 - [data access](java/data-access)
+- [이펙티브 자바](java/effective-java)
 - [thread pool](java/threadpool.md)
 
 ### JPA
