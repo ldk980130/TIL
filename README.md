@@ -1,18 +1,18 @@
 # Today I Learned
 
 ### SPRING
-- [docs](spring/docs)
+- [공식 문서](spring/docs)
   - [batch](spring/docs/batch)
   - [core](spring/docs/core)
   - [data-access](spring/docs/data-access)
   - [test](spring/docs/test)
   - [web-servlet](spring/docs/web-servelet)
-- [lecture](spring/lecture)
-  - [basic](spring/lecture/basic)
+- [인프런 강의](spring/lecture)
+  - [스프링 핵심 원리 기본편](spring/lecture/basic)
   - [mvc1](spring/lecture/mvc1)
   - [mvc2](spring/lecture/mvc2)
-  - [advance](spring/lecture/advance)
-- [toby-spring](spring/toby-spring)
+  - [스프링 힉샘 원리 고급편](spring/lecture/advance)
+- [토비의 스프링](spring/toby-spring)
 
 ### JAVA
 - [jvm](java/jvm)
@@ -21,11 +21,11 @@
 - [thread pool](java/threadpool.md)
 
 ### JPA
-- [lecture](jpa/lecture)
-  - [basic](jpa/lecture/basic)
-  - [spring-data-jpa](jpa/lecture/spring-data-jpa)
-  - [querydsl](jpa/lecture/querydsl)
-  - [tuning](jpa/lecture/tuning)
+- [인프런 강의](jpa/lecture)
+  - [자바 ORM 표준 JPA 프로그래밍 기본편](jpa/lecture/basic)
+  - [실전 스프링 데이터 JPA](jpa/lecture/spring-data-jpa)
+  - [실전 Querydsl](jpa/lecture/querydsl)
+  - [활용편 정리](jpa/lecture/tuning)
 
 ### TEST
 - [junit](test/junit)
