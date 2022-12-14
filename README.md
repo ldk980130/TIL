@@ -44,6 +44,7 @@
   - [concurrency control](database/mysql/concurrency-control)
   - [index](database/mysql/index)
   - [sql](database/mysql/sql)
+- [데이터 분할](database/distributed-data)
 
 ### DESIGN
 - [clean architecture](design/clean-architecture)
