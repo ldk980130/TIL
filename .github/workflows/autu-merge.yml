@@ -2,7 +2,7 @@ name: Merge pull request
 
 on:
   schedule:
-    - cron: '0 10 * * *'
+    - cron: '*/5 * * * *'
 
 jobs:
   merge:
