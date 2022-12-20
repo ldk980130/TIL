@@ -1,0 +1,23 @@
+name: Merge pull request
+
+on:
+  schedule:
+    - cron: '0 10 * * *'
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check if branch exists
+      run: |
+        BRANCH_NAME=$(date +%Y-%m-%d)
+        if ! git rev-parse --verify $BRANCH_NAME > /dev/null 2>&1; then
+          echo "Branch $BRANCH_NAME does not exist"
+          exit 78
+        fi
+    - uses: actions/checkout@v2
+      with:
+        ref: $(date +%Y-%m-%d)
+    - uses: actions/merge@v1
+      with:
+        branch: main
