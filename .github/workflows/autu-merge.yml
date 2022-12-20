@@ -1,28 +1,28 @@
-name: Merge pull request
+# name: Merge pull request
 
-on:
-  schedule:
-    - cron: '*/5 * * * *'
+# on:
+#   schedule:
+#     - cron: '*/5 * * * *'
 
-jobs:
-  merge:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Check if branch exists
-      run: |
-        BRANCH_NAME=$(date +%Y-%m-%d)
-        if ! git rev-parse --verify $BRANCH_NAME > /dev/null 2>&1; then
-          echo "Branch $BRANCH_NAME does not exist"
-          exit 78
-        fi
-    - uses: actions/checkout@v2
-      with:
-        ref: $(date +%Y-%m-%d)
-    - name: Create pull request
-      uses: peter-evans/create-pull-request@v3
-      with:
-        commit-message: "Merge branch $(date +%Y-%m-%d) into main"
-        title: "Merge branch $(date +%Y-%m-%d) into main"
-        head: $(date +%Y-%m-%d)
-        base: main
-        labels: merge-request
+# jobs:
+#   merge:
+#     runs-on: ubuntu-latest
+#     steps:
+#     - name: Check if branch exists
+#       run: |
+#         BRANCH_NAME=$(date +%Y-%m-%d)
+#         if ! git rev-parse --verify $BRANCH_NAME > /dev/null 2>&1; then
+#           echo "Branch $BRANCH_NAME does not exist"
+#           exit 78
+#         fi
+#     - uses: actions/checkout@v2
+#       with:
+#         ref: $(date +%Y-%m-%d)
+#     - name: Create pull request
+#       uses: peter-evans/create-pull-request@v3
+#       with:
+#         commit-message: "Merge branch $(date +%Y-%m-%d) into main"
+#         title: "Merge branch $(date +%Y-%m-%d) into main"
+#         head: $(date +%Y-%m-%d)
+#         base: main
+#         labels: merge-request
