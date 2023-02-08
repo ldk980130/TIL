@@ -227,7 +227,7 @@
     public class RegisteredProductService {
     
     	public ProductId registerNewProduct(NewProductRequest req) {
-    		Store store = findStoreById(req.getStoreId());throw new StoreBlockedException();
+    		Store store = findStoreById(req.getStoreId());
     		Product product = store.createProduct(req.getName());
     		return new ProductId(productRepository.save(product));
     	}
