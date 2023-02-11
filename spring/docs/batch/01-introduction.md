@@ -48,7 +48,7 @@ Spring Batch는 이 기본 배치 반복을 자동화한다.
 - 인프라 레이어에 영향을 주지 않고 모든 코어 서비스를 쉽게 대체하고 확장할 수 있다.
 - JAR로 간단한 배포 모델을 제공한다.
 
-## [Spring Batch Architecture](https://docs.spring.io/spring-batch/docs/current/reference/html/spring-batch-intro.html#springBatchArchitecture)
+## [Spring Batch Architecture](https://docs.spring.io/spring-batch/docs/current/reference/html/spring-batch-architecture.html#springBatchArchitecture)
 
 Spring Batch는 다양한 end 유저 그룹을 염두에 두고 설계 되었다. 아래 그림은 엔드 유저 개발자의 확장성과 편의성을 지원하는 레이어 아키텍처를 보여준다.
 ![img.png](../../../image/batch-architecture.png)
@@ -63,7 +63,7 @@ Spring Batch는 다양한 end 유저 그룹을 염두에 두고 설계 되었다
 - **Batch Infrastructure**
   - 애플리케이션 개발자와 코어 프레임워크 자체에 의해 사용되는 공통 readers와 writers 및 서비스를 포함한다. (`ItemReader` 및 `ItemWriter`)
 
-## [General Batch Principles and Guidelines](https://docs.spring.io/spring-batch/docs/current/reference/html/spring-batch-intro.html#batchArchitectureConsiderations)
+## [General Batch Principles and Guidelines](https://docs.spring.io/spring-batch/docs/current/reference/html/spring-batch-architecture.html#springBatchArchitecture)
 
 - 배치 아키텍처는 일반적으로 서비스 아키텍처에 영향을 미치고 반대도 마찬가지다. 배치와 서비스에 영향을 최소화할 수 있도록 구조와 환경에 맞게 디자인 해야 한다.
 - 가능한 단순화하고 단일 배치 애플리케이션에서 복잡한 논리 구조를 구축하지 않도록 한다.
@@ -81,4 +81,4 @@ Spring Batch는 다양한 end 유저 그룹을 염두에 두고 설계 되었다
 - 현실적인 데이터 볼륨이 있는 프로덕션 환경에서 스트레스 테스트를 가능한 일찍 계획하고 실행한다.
 - 대규모 배치 시스템에서는 백업이 어려울 수도 있다. 백업 절차를 수립하고 문서화와 정기적인 테스트를 수행할 필요가 있다.
 
-## [Batch Processing Strategies](https://docs.spring.io/spring-batch/docs/current/reference/html/spring-batch-intro.html#batchProcessingStrategy)
+## [Batch Processing Strategies](hhttps://docs.spring.io/spring-batch/docs/current/reference/html/spring-batch-architecture.html#batchProcessingStrategy)
