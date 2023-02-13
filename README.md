@@ -33,6 +33,7 @@
 ### INFRA
 - [aws](infra/aws)
   - [aws 인프라 구축 가이드](infra/aws/aws-infra-deployment-guide)
+  - [따라하며 배우는 AWS 네트워크 입문](infra/aws/intro-aws-network-to-follow-learn)
 - [linux](infra/linux)
 - [nginx](infra/nginx)
 - [message queue](infra/message-queue)
