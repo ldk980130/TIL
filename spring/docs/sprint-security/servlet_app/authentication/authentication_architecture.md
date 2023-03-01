@@ -27,7 +27,7 @@
 
 - 스프링 시큐리티의 중심이 되가는 모델
   - `SecurityContext`를 포함하고 있다.
-  ![img.png](../../../../image/security_hoder.png)
+  ![img.png](../../../../../image/security_hoder.png)
 - 인증한 사용자들의 details를 저장하는 곳
 - 스프링 시큐리티는 `SecurityContextHolder`에 어떻게 값이 들어갔는지는 상관하지 않고 값이 있다면 인증된 사용자가 있다고 본다.
   - 사용자가 인증되었음을 나타내는 가장 쉬운 방법은 직접 값을 넣는 것이다.
@@ -102,7 +102,7 @@
 
 > `ProviderFoundException`이 발생했다는 뜻은 넘겨진 `Authentication` 유형을 지원하는 `ProviderManager`가 설정되지 않았다는 것이다.
 
-![img.png](../../../../image/providermanager.png)
+![img.png](../../../../../image/providermanager.png)
 
 - 기본적으로 `ProviderManager`는 인증에 성공하면 리턴하는 `Authentication` 객체에 있는 민감 credential 정보를 지운다.
   - 비밀번호 등을 `HttpSession`에 길게 유지하지 않는다.
@@ -129,7 +129,7 @@
 
 - `AbstractAuthentiationProcessingFilter`는 사용자 `credentials`을 인증하는 base `Filter`다.
   - 인증할 수 없다면 `AuthenticationEntryPoint`가 `credential` 요청 응답을 보내는 것
-![img.png](../../../../image/abstractauthenticationprocessingfilter.png)
+![img.png](../../../../../image/abstractauthenticationprocessingfilter.png)
 1. 사용자가 credential을 제출하면 `AbstractAuthenticationProcessingFitler`가 `HttpServletRequest`에서 `Authentication`을 생성한다.
    1. Authentication의 타입은 `AbstractAuthenticationProcessingFitler`의 하위 클래스에 따라 다르다.
    2. ex) `UsernamePasswordAuthenticationFilter`라면 `UsernamePasswordAuthenticationToken` 타입이 생성된다.
