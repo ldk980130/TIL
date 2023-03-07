@@ -7,7 +7,7 @@
   - [data access](spring/docs/data-access)
   - [test](spring/docs/test)
   - [web servlet](spring/docs/web-servelet)
-  - [spring security](spring/docs/sprint-security)
+  - [spring security](spring/docs/spring-security)
 - [인프런 강의](spring/lecture)
   - [스프링 핵심 원리 기본편](spring/lecture/basic)
   - [mvc1](spring/lecture/mvc1)
