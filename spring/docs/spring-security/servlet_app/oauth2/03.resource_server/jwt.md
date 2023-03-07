@@ -54,7 +54,7 @@ Authorization: Bearer some-token-value # Resource Server will process this
 ## [How JWT Authentication Works](https://docs.spring.io/spring-security/reference/servlet/oauth2/resource-server/jwt.html#oauth2resourceserver-jwt-architecture)
 
 - `JwtAuthenticationProvider`는 `AuthenticationProvider`의 하위 구현체이며 JWT를 인증하기 위한 `JwtDecoder`와 `JwtAuthenticationConverter`를 활용한다.
-![img.png](jwt-security-fow.png)
+![img.png](../../../../../../image/jwt-security-fow.png)
 1. Bearer 토큰을 읽는 `Filter`에서 `BearerTokenAuthenticationToken`을 `AuthenticationManager`를 구현한 `ProvderManager`에게 전달한다.
 2. `ProviderManager`는 `JwtAuthenticationProvider` 타입의 `AuthenticationProvider`가 설정되어 있어 사용할 수 있다.
 3. `JwtAuthenticationProvider`는 `JwtDecoder`를 사용해 디코딩, 검증 및 유효성을 검사한다.
