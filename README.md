@@ -8,6 +8,7 @@
   - [test](spring/docs/test)
   - [web servlet](spring/docs/web-servelet)
   - [spring security](spring/docs/spring-security)
+  - [integration](spring/docs/integration)
 - [인프런 강의](spring/lecture)
   - [스프링 핵심 원리 기본편](spring/lecture/basic)
   - [mvc1](spring/lecture/mvc1)
