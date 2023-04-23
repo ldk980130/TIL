@@ -54,6 +54,7 @@
 ### DESIGN
 - [clean architecture](design/clean-architecture)
 - [도메인 주도 개발](design/domain-driven-design)
+- [클린아키텍처 애매한 부분 정리해드립니다](design/NHN_FORWARD22_clean_architecture.md)
 
 ### NETWORK
 - [http](network/http)
