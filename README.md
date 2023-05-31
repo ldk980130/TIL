@@ -60,6 +60,7 @@
 - [http](network/http)
 - [네트워크 계층](network/network-layer)
 - [TCP와 UDP (HTTP/3)](network/TCP&UDP&HTTP3.md)
+- [CORS](network/CORS.md)
 
 ### OS
 - [deadlock](os/deadlock.md)
