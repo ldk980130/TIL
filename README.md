@@ -50,6 +50,7 @@
   - [index](database/mysql/index)
   - [sql](database/mysql/sql)
 - [데이터 분할](database/distributed-data)
+- [데드락 해결기](database/deadlock-troubleshooting.md)
 
 ### DESIGN
 - [clean architecture](design/clean-architecture)
