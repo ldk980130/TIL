@@ -60,6 +60,7 @@
 ### NETWORK
 - [http](network/http)
 - [네트워크 계층](network/network-layer)
+- [IP](network/ip)
 - [TCP와 UDP (HTTP/3)](network/TCP&UDP&HTTP3.md)
 - [CORS](network/CORS.md)
 - [포트와 소켓](network/port&socket.md)
