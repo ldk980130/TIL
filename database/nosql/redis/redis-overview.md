@@ -10,7 +10,7 @@
 - Look aside Cache
     - 클라이언트가 요청한 데이터가 캐시에 있는지 먼저 확인하여 응답
     - 캐시에 데이터가 없다면 DB를 조회하고 캐시에 적재한 뒤 응답
-- Write Back
+- Write Back가
     - 서버가 모든 데이터를 캐시에만 저장
     - 캐시의 데이터를 일정 주기마다 DB에 모두 반영
     - DB에 저장한 데이터를 캐시에서 제거
@@ -63,4 +63,5 @@
 ---
 
 https://aws.amazon.com/ko/elasticache/what-is-redis/
+
 https://youtu.be/mPB2CZiAkKM
