@@ -51,6 +51,8 @@
   - [sql](database/mysql/sql)
 - [데이터 분할](database/distributed-data)
 - [데드락 해결기](database/deadlock-troubleshooting.md)
+- [NoSQL](database/nosql)
+  - [Redis](database/nosql/redis)
 
 ### DESIGN
 - [clean architecture](design/clean-architecture)
