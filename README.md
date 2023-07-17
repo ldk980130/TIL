@@ -78,6 +78,7 @@
 - [spinlock, mutex, semaphore](os/spinlock-mutex-semaphore.md)
 - [monitor](os/monitor.md)
 - [nio, bio](os/blocking-io&non-blocking-io.md)
+- [메모리 계층 구조](os/memory_hierarchy.md)
 
 ### SECURITY
 - [웹 공격과 보안](security/web-attack.md)
