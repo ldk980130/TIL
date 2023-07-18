@@ -16,7 +16,7 @@
 - 프로세스는 CPU 버스트와 IO 버스트가 반복적으로 바뀌며 실행된다.
 
 ## CPU bound 프로세스
-![img.png](../image/cpu-bound.png)
+![img.png](../../image/cpu-bound.png)
 - CPU burst가 많은 프로세스
 - 프로세서(CPU)가 작업 실행의 대부분의 시간을 차지하고 다른 요소들은 적게 실행된다.
 - 일반적으로 많은 계산이 필요한 애플리케이션을 예로 들 수 있다.
@@ -34,7 +34,7 @@
     - T1 작업 → CS(컨텍스트 스위칭) → T2 작업 → CS → T1 작업 → CS …
 
 ## IO bound 프로세스
-![img.png](../image/io-bound.png)
+![img.png](../../image/io-bound.png)
 - IO burst가 많은 프로세스
 - 프로그램의 실행이 입출력 시스템과 디스크 드라이브 등에 의존하는 경우
 - 예) (일반적인) 백엔드 API 서버
