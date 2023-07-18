@@ -38,7 +38,7 @@
 
 ### Address Binding 과정
 
-![image](https://github.com/ldk980130/TIL/assets/78652144/c94d3727-8268-4183-b4cf-6360a5d746ba)
+<img width="300" src="https://github.com/ldk980130/TIL/assets/78652144/c94d3727-8268-4183-b4cf-6360a5d746ba">
 
 1. 소스 코드에는 심볼릭 주소가 존재
     1. 변수, 함수, 클래스 등의 식별자
