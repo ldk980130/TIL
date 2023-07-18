@@ -70,15 +70,11 @@
 - [포트와 소켓](network/port&socket.md)
 
 ### OS
+- [메모리](os/memory)
+- [프로세스](os/process)
+- [동기화](os/synchronization)
 - [deadlock](os/deadlock.md)
-- [Asynchronous, Synchronous, Blocking, Non-blocking](os/async-sync-bocking-nonblocking.md)
-- [동시에 프로그램을 실행하는 방법](os/multi-process-thread.md)
-- [Context Switching](os/context-switching.md)
-- [CPU bound, IO bound](os/cpu-bound-io-bound.md)
-- [spinlock, mutex, semaphore](os/spinlock-mutex-semaphore.md)
-- [monitor](os/monitor.md)
 - [nio, bio](os/blocking-io&non-blocking-io.md)
-- [메모리 계층 구조](os/memory_hierarchy.md)
 
 ### SECURITY
 - [웹 공격과 보안](security/web-attack.md)
