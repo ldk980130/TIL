@@ -1,4 +1,3 @@
-# 컨텍스트 스위칭
 ## 컨텍스트 스위칭
 
 - 프로세스/스레드가 실행되다가 OS가 개입하여 CPU에 할당된 프로세스/스레드를 바꾸는 것
@@ -28,6 +27,29 @@
 참고 - [위키](https://ko.wikipedia.org/wiki/%EC%BB%A4%EB%84%90_(%EC%BB%B4%ED%93%A8%ED%8C%85))
 >
 
+### PCB (Process Control Block)
+
+- 프로세스를 교체하고 실행하는 과정에서 PCB를 이용한다.
+- PCB 구조
+    - Process ID(PID): 프로세스 고유 식별 번호
+    - Process State: 프로세스의 현재 상태(준비, 실행, 대기 상태)
+    - Program Counter: 프로세스가 다음에 실행할 명령어의 주소
+    - Process Priority: 프로세스 우선순위 정보
+    - CPU Registers: 프로세스의 레지스터 상태를 저장하는 공간
+    - Memory Limits: OS에서 사용하는 메모리 관리 시스템의 정보. 페이지 테이블, 세그먼트 테이블 등이 포함될 수 있다..
+    - Open File Lists: 프로세스를 위해 열린 파일 목록
+    - 등
+- 컨텍스트 스위칭이 발생하면 기존 프로세스 정보를 PCB에 저장하고 새롭게 실행할 프로세스의 정보를 PCB에서 가져와 CPU 레지스터에 적재한다.
+
+### 컨텍스트 스위칭 과정
+
+1. 현재 실행 중인 프로세스 혹은 스레드의 context 백업 (PCB)
+2. CPU 캐시를 비움
+    1. CPU마다 L1, L2 캐시 동작이 다를 수도 있고 안 비울 수도 있다.
+3. TLB를 비움
+4. MMU를 변경
+- 프로세스 컨텍스트 스위칭은 위 4가지 과정을 모두 수행하지만 스레드 컨텍스트 스위칭은 1번만 수행한다.
+
 ### 프로세스 간, 스레드 간 컨텍스트 스위칭 공통점
 
 1. 커널 모드에서 실행
@@ -38,13 +60,15 @@
 ### 스레드 컨텍스트 스위칭
 
 - T1이 작업 수행 → 커널 모드 시작 → T1의 상태 저장 → T2의 상태 로딩 → 커널 모드 종료 → T2 작업 시작
+- 스레드는 Stack 영역을 제외한 모든 메모리를 공유하기에 Stack 영역만 변경하면 된다.
 
 ### 프로세스 컨텍스트 스위칭
 
 - P1(T1)이 작업 수행 → 커널 모드 시작 → P1(T1)의 상태 저장 → P2(T2)의 상태 로딩 → {**메모리 관련 처리 추가**} → 커널 모드 종료 → P2(T2)작업 시작
-- 가상 메모리 주소 관련 처리를 추가로 수행
+- 메모리 관련 처리를 추가로 수행
     - MMU( Memory Management Unit)가 P2 메모리 주소 영역 보도록 변경
     - TLB를 완전히 비움
+- 프로세스들 간에는 서로 메모리 주소 공간에 침범하면 안되기 때문
 
 > **MMU(Memory Management Unit)**
 런타임 중에 가상 주소를 물리적 주소를 매핑하는 하드웨어 디바이스이다. 사용자 프로그램은 논리적 주소를 다루고 물리적 주소를 신경 쓰지 않는다.
@@ -56,7 +80,8 @@
 
 ### 스레드 컨텍스트 스위칭이 빠른 이유
 
-- 메모리 주소 관련 처리는 하지 않기 때문이다.
+- 메모리 주소 관련 처리는 하지 않음
+- 캐시를 재사용할 수 있음
 
 ### 캐시 오염
 
@@ -70,6 +95,8 @@
 
 Operating System Concepts - Tenth Edition
 
-[https://www.youtube.com/watch?v=Xh9Nt7y07FE](https://www.youtube.com/watch?v=Xh9Nt7y07FE)
+https://www.youtube.com/watch?v=Xh9Nt7y07FE
 
-[https://blog.naver.com/PostView.naver?blogId=kgr2626&logNo=222147205118&redirect=Dlog&widgetTypeCall=true&directAccess=false](https://blog.naver.com/PostView.naver?blogId=kgr2626&logNo=222147205118&redirect=Dlog&widgetTypeCall=true&directAccess=false)
+https://blog.naver.com/PostView.naver?blogId=kgr2626&logNo=222147205118&redirect=Dlog&widgetTypeCall=true&directAccess=false
+
+https://yoongrammer.tistory.com/52
