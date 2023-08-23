@@ -43,6 +43,7 @@
   - [kafka](infra/message-queue/kafka)
 - [도커](infra/docker)
   - [도커 컨테이너 빌드 업](infra/docker/docker_container_buildup)
+- [가상 면접 사례로 배우는 대규모 시스템 설계 기초](infra/system_design_interview)
 
 ### DATABASE
 - [mysql](database/mysql)
