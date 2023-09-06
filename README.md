@@ -14,14 +14,14 @@
   - [mvc1](spring/lecture/mvc1)
   - [mvc2](spring/lecture/mvc2)
   - [스프링 힉샘 원리 고급편](spring/lecture/advance)
-- [토비의 스프링](spring/toby-spring)
+- 📗[토비의 스프링](spring/toby-spring)
 
 ### JAVA
 - [jvm](java/jvm)
 - [data access](java/data-access)
-- [이펙티브 자바](java/effective-java)
+- 📗[이펙티브 자바](java/effective-java)
 - [thread pool](java/threadpool.md)
-- [자바 최적화](java/optimizing-java)
+- 📗[자바 최적화](java/optimizing-java)
 
 ### JPA
 - [인프런 강의](jpa/lecture)
@@ -35,19 +35,19 @@
 
 ### INFRA
 - [aws](infra/aws)
-  - [aws 인프라 구축 가이드](infra/aws/aws-infra-deployment-guide)
-  - [따라하며 배우는 AWS 네트워크 입문](infra/aws/intro-aws-network-to-follow-learn)
+  - 📗[aws 인프라 구축 가이드](infra/aws/aws-infra-deployment-guide)
+  - 📗[따라하며 배우는 AWS 네트워크 입문](infra/aws/intro-aws-network-to-follow-learn)
 - [linux](infra/linux)
 - [nginx](infra/nginx)
 - [message queue](infra/message-queue)
   - [kafka](infra/message-queue/kafka)
 - [도커](infra/docker)
-  - [도커 컨테이너 빌드 업](infra/docker/docker_container_buildup)
-- [가상 면접 사례로 배우는 대규모 시스템 설계 기초](infra/system_design_interview)
+  - 📗[도커 컨테이너 빌드 업](infra/docker/docker_container_buildup)
+- 📗[가상 면접 사례로 배우는 대규모 시스템 설계 기초](infra/system_design_interview)
 
 ### DATABASE
 - [mysql](database/mysql)
-  - [Real MySQL](database/mysql/real-my-sql)
+  - 📗[Real MySQL](database/mysql/real-my-sql)
   - [concurrency control](database/mysql/concurrency-control)
   - [index](database/mysql/index)
   - [sql](database/mysql/sql)
@@ -57,9 +57,9 @@
   - [Redis](database/nosql/redis)
 
 ### DESIGN
-- [클린 아키텍처](design/clean-architecture)
-- [만들면서 배우는 클린 아키텍처](design/clean-architecture-hands-on)
-- [도메인 주도 개발](design/domain-driven-design)
+- 📗[클린 아키텍처](design/clean-architecture)
+- 📗[만들면서 배우는 클린 아키텍처](design/clean-architecture-hands-on)
+- 📗[도메인 주도 개발 시작하기](design/domain-driven-design)
 - [클린아키텍처 애매한 부분 정리해드립니다](design/NHN_FORWARD22_clean_architecture.md)
 
 ### NETWORK
