@@ -22,6 +22,7 @@
 - 📗[이펙티브 자바](java/effective-java)
 - [thread pool](java/threadpool.md)
 - 📗[자바 최적화](java/optimizing-java)
+- [가상 스레드](java/virtual-thread.md)
 
 ### JPA
 - [인프런 강의](jpa/lecture)
