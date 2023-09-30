@@ -64,4 +64,80 @@
 - 대부분의 가상 스레드는 수명이 짧고 호출 스택이 얕으며 단일 HTTP 클라이언트 호출 또는 단일 JDBC 쿼리만 수행한다.
 - 요약하면 가상 스레드는 하드웨어를 최적으로 활용하면서 Java 플랫폼의 설계와 조화를 이루는 안정적인 thread-per-request 스타일을 유지한다.
 
+## 3. 가상 스레드 사용
+
+- 개발자는 가상 스레드를 사용할지 플랫폼 스레드를 사용할지 선택할 수 있다.
+
+    ```java
+        public static void main(String[] args) {
+            long start = System.currentTimeMillis();
+            try (var executor = Executors.newVirtualThreadPerTaskExecutor()) {
+                for (int i = 0; i < 10000; i++) {
+                    executor.submit(Main::blockOneSeconds);
+                }
+            }
+            long end = System.currentTimeMillis();
+            System.out.println("가상 스레드 사용 : " + (end - start) + "ms");
+    
+            start = System.currentTimeMillis();
+            try (var executor = Executors.newFixedThreadPool(200)) {
+                for (int i = 0; i < 10000; i++) {
+                    executor.submit(Main::blockOneSeconds);
+                }
+            }
+            end = System.currentTimeMillis();
+            System.out.println("플랫폼 스레드 사용 : " + (end - start) + "ms");
+        }
+    
+        private static void blockOneSeconds() {
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        }
+    ```
+
+  - 최신 하드웨어는 여러 코드를 동시에실행하는 10000개의 가상 스레드를 쉽게 지원할 수 있다.
+  - 그 뒤에선 적은 수의 OS 스레드(아마도 하나 정도)에서 코드를 실행한다.
+- `Executors.newFixtedThreadPool(200)`과 같이 플랫폼 스레드를 가져오는 `ExecutorService`를 사용했다면 처리량이 훨씬 안좋아질 것이다.
+  - 10000개의 작업을 공유할 200개의 플랫폼 스레드를 생성하게 된다.
+  - 많은 작업이 순차적으로 실행된다.
+  - 200개 플랫폼 스레드가 있는 풀은 초당 200개 작업 처리량을 달성하는 반면 가상 스레드는 충분한 워밍업 후 초당 10000개의 작업 처리량을 달성할 수 있다.
+  - 실제로 위 코드를 가상 스레드와 플랫폼 스레드 각각 실행한 결과 성능 차이가 50배가 났다.
+
+    ```
+    가상 스레드 사용 : 1102ms
+    플랫폼 스레드 사용 : 50209ms
+    ```
+
+- 가상 스레드는 더 빠른 스레드가 아니다.
+- 작업의 로직이 단순히 `sleep()`을 하는게 아니라 1초 동안 CPU 코어를 태우며 계산을 수행하는 경우엔 가상 스레드든 플랫폼 스레드든 코어 수르 초과하는 스레드 수는 의미가 없다.
+- 즉 가상 스레드는 다음과 같은 경우 유용하다.
+  - 동시 작업 수가 많다.
+  - 워크로드가 CPU에 종속되지 않는 경우 (ex. I/O bound)
+
+### 3.1 가상 스레드는 풀링하지 마라
+
+- 플랫폼 스레드와 달리 가상 스레드는 생성 비용이 적으므로 풀링할 필요가 없다.
+  - 플랫폼 스레드의 경우에는 생성 비용이 비싸기 위해 개수를 제한하고 풀 안의 스레드를 재사용하며 애플리케이션을 동작시킨다.
+- 비싼 리소스를 매우 많은 가상 스레드에서 효율적으로 공유할 수 있도록 캐싱 전략을 사용하도록 해야 한다.
+  - DB 커넥션과 같은 비싼 리소스를 스레드 로컬 변수에 저장한 후 나중에 같은 스레드의 다른 작업에서 사용하는 경우가 있다.
+  - 가상 스레드를 사용으로 코드를 마이그레이션 하는 경우 모든 가상 스레드가 비싼 리소스를 생성하면 성능이 크게 저하될 것이다.
+
+### 3.2 가상 스레드 스케줄링
+
+- 플랫폼 스레드의 경우 OS 스레드를 코어에 할당하는 OS 스케줄러에 의존한다.
+- 반면 가상 스레드의 경우 JDK 자체 스케줄러가 존재하는데 가상 스레드를 코어에 직접 할당하는 대신 가상 스레드를 플랫폼 스레드에 할당한다.
+  - 플랫폼 스레드는 여전히 OS에 의해 스케줄링된다.
+- JDK의 가상 스레드 스케줄러는 work-stealing `ForJoinPool`로 FIFO 모드에서 작동한다.
+  - 스케줄러의 병렬성은 플랫폼 스레드의 수
+  - 이 포크조인 풀은 병렬 스트림 구현에 사용되는 공통 풀과는 구분된다.
+- 가상 스레드가 할당되는 플랫폼 스레드를 가상 스레드의 ‘캐리어’라고 한다.
+  - 스케줄러는 가상 스레드와 특정 플랫폼 스레드 사이의 선호도를 유지하지 않는다.
+  - Java 코드 관점에서 가상 스레드는 현재 캐리어와 논리적으로 독립적
+  - 가상 스레드에서 캐리어를 특정할 수 없는데 `Thread.currentThread()`를 사용해도 가상 스레드 자체가 반환된다.
+  - 캐리어와 가상 스레드의 스택 추적은 분리되어 있다. 가상 스레드의 예외는 캐리어 스택 프레임에 포함되지 않는다.
+  - 캐리어의 스레드 로컬 변수는 가상 스레드에서 사용할 수 없고 반대도 마찬가지다.
+
 https://findstar.pe.kr/2023/04/17/java-virtual-threads-1/
