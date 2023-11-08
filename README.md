@@ -62,6 +62,7 @@
 - 📗[만들면서 배우는 클린 아키텍처](design/clean-architecture-hands-on)
 - 📗[도메인 주도 개발 시작하기](design/domain-driven-design)
 - [클린아키텍처 애매한 부분 정리해드립니다](design/NHN_FORWARD22_clean_architecture.md)
+- [오프젝트](design/object)
 
 ### NETWORK
 - [http](network/http)
