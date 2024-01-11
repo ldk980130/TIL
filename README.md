@@ -46,7 +46,7 @@
 - [데드락 해결기](database/deadlock-troubleshooting.md)
 
 ### DESIGN
-- 📗[클린 아키텍처](design/clean-architecture)
+- 📗[클린 아키텍처](design/clean-architecture/index.md)
 - 📗[만들면서 배우는 클린 아키텍처](design/clean-architecture-hands-on)
 - 📗[도메인 주도 개발 시작하기](design/domain-driven-design)
 - 📗[오브젝트](design/object)
