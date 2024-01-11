@@ -22,7 +22,8 @@
 - [인프런 강의](jpa/lecture/index.md)
 
 ### TEST
-- [junit](test/junit)
+- Junit
+  - [Junit Extension](test/junit/junit-extension.md)
 
 ### INFRA
 - [aws](infra/aws)
