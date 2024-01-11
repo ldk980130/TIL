@@ -27,7 +27,7 @@
 
 ### INFRA
 - [AWS](infra/aws/index.md)
-  - 📗[aws 인프라 구축 가이드](infra/aws/aws-infra-deployment-guide)
+  - 📗[aws 인프라 구축 가이드](infra/aws/aws-infra-deployment-guide/index.md)
   - 📗[따라하며 배우는 AWS 네트워크 입문](infra/aws/intro-aws-network-to-follow-learn)
 - 리눅스
   - [명령어](infra/linux/command.md)
