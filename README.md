@@ -54,9 +54,9 @@
 - [클린아키텍처 애매한 부분 정리해드립니다](design/NHN_FORWARD22_clean_architecture.md)
 
 ### NETWORK
-- [http](network/http)
-- [네트워크 계층](network/network-layer)
-- [IP](network/ip)
+- [http](network/http/index.md)
+- [네트워크 계층](network/network-layer/osi-7-layer.md)
+- [IP](network/ip/ipv4.md)
 - [TCP와 UDP (HTTP/3)](network/TCP&UDP&HTTP3.md)
 - [CORS](network/CORS.md)
 - [포트와 소켓](network/port&socket.md)
