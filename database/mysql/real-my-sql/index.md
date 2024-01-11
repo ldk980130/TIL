@@ -42,8 +42,7 @@
   - 9.2 기본 데이터 처리
     - [9.2(1) 풀 테이블, 풀 인덱스 스캔과 병렬 처리](09-optimizer&hint/9.2-1-full-table-scan&full-index-scan&parallel.md)
     - [9.2(2) ORDER BY 처리](09-optimizer&hint/9.2-2-orderby.md)
-    - [9.2(3) GROUP BY와 DISTINCT
-      ](09-optimizer&hint/9.2-3-groupby&distinct.md)
+    - [9.2(3) GROUP BY와 DISTINCT](09-optimizer&hint/9.2-3-groupby&distinct.md)
     - [9.2(4) 내부 임시 테이블 활용](09-optimizer&hint/9.2-4-temporary-table.md)
   - 9.3 고급 최적화
     - [9.3(1) MRR과 블록 네스티드 루프 조인](09-optimizer&hint/9.3-1-mrr&block_nested_loop_join.md)

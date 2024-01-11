@@ -29,6 +29,7 @@
 | IX | Conflict | Compatible | Conflict | Compatible |
 | S | Conflict | Conflict | Compatible | Compatible |
 | IS | Conflict | Compatible | Compatible | Compatible |
+
 - IS, IX lock은 여러 트랜잭션에서 동시에 접근 가능하다.
 - 하지만 실제 row-level lock인 s lock, x lock에서 접근 제어를 하게 된다.
 - 테이블 자체에 lock을 걸거나 alter table, drop table 등을 실행할 때는 IS, IX를 모두 block하는 table-level lock이 걸린다.

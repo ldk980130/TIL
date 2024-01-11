@@ -11,5 +11,4 @@
   - [커버링 인덱스](index/covering-index.md)
 - sql
   - [JOIN](sql/join.md)
-- - [MySQL](database/mysql/index.md)
 - 📗[Real MySQL](real-my-sql/index.md)

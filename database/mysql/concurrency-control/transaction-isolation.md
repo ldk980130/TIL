@@ -20,6 +20,7 @@
     - **SERIALIZABLE**
 
 ### 격리 수준 문제점
+
 | 격리 수준 | DIRTY READ | NON-REPEATABLE READ | PHANTOM READ |
 | --- | --- | --- | --- |
 | READ UNCOMMITED | O | O | O |
