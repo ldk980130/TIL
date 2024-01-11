@@ -17,11 +17,11 @@
 - **단일 값 연관 경로**: 묵시적 내부 조인(inner join) 발생, 탐색O
 
 > `“select m.team from Member m”` 실행 시 sql에선 조인이 실행됨 (묵시적 내부 조인) 묵시적 내부 조인이 발생하게 짜면 안된다. (운영이 힘들어짐)
->
+
 - **컬렉션 값 연관 경로**: 묵시적 내부 조인 발생, 탐색X
 
 > `“select t.members from Team t”` t.members에선 .(점)으로 또 탐색할 수는 없다.
->
+
 - FROM 절에서 명시적 조인을 통해 별칭을 얻으면 별칭으로 탐색 가능
 
   `“select m from Team t join t.members m”`

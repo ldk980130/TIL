@@ -173,7 +173,7 @@ private Address workAddress;
 ## **값 타입 컬렉션**
 
 > 관계형 DB는 값 타입의 컬렉션을 가지고 있을 수 없다. 별도의 테이블로 뽑아서 일대다로 매핑해야 한다.
->
+
 - 값 타입을 하나 이상 저장할 때 사용
 - `@ElementCollection`, `@CollectionTable` 사용
 - 데이터베이스는 컬렉션을 같은 테이블에 저장할 수 없다.
