@@ -62,9 +62,17 @@
 - [포트와 소켓](network/port&socket.md)
 
 ### OS
-- [메모리](os/memory)
-- [프로세스](os/process)
-- [동기화](os/synchronization)
+- 메모리
+  - [메모리 계층 구조](os/memory/memory_hierarchy.md)
+  - [주소 바인딩](os/memory/address-binding.md)
+- 프로세스
+  - [컨텍스트 스위칭](os/process/context-switching.md)
+  - [CPU bound, IO bound](os/process/cpu-bound-io-bound.md)
+  - [동시에 프로그램을 실행하는 방법](os/process/multi-process-thread.md)
+- 동기화
+  - [Asynchronous, Synchronous, Blocking, Non-blocking](os/synchronization/async-sync-bocking-nonblocking.md)
+  - [스핀락, 뮤텍스, 세마포](os/synchronization/spinlock-mutex-semaphore.md)
+  - [모니터](os/synchronization/monitor.md)
 - [deadlock](os/deadlock.md)
 - [nio, bio](os/blocking-io&non-blocking-io.md)
 
