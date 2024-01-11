@@ -94,6 +94,7 @@
 
 ## 프로듀서(Producer)
 - 토픽에 메시지 전송 (key, value)
+
 ```java
 Properties prop = new Properties();
 prop.put("bootstrap.servers", "kafka01:9092,kafka01:9902,kafka01:9902");
@@ -107,6 +108,7 @@ producer.send(new ProducerRecord<>("topicname", "value"));
 
 producer.close();
 ```
+
 - `Properties` - 프로듀서가 사용할 속성을 지정할 수 있다.
   - 브로커 목록이나 key나 value를 직렬화할 때 사용할 Serializer 등을 지정할 수 있다.
   - ack, batchSize 등도 지정할 수 있다.
@@ -245,6 +247,7 @@ producer.send(new ProducerRecord<>("topic", "value"),
 
 ## 컨슈머
 - 토픽 파티션에서 레코드 조회
+
 ```java
 Properties prop = new Properties();
 prop.put("bootstrap.servers", "localhost9902");
@@ -263,6 +266,7 @@ while(조건) {
 
 consumer.close();
 ```
+
 - `Properties`
   - group id 지정
   - 역직렬화를 위햔 `Deserializer` 등록
