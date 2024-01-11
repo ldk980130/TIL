@@ -12,7 +12,7 @@
 - Chapter 04. 컨테이너 환경 구성을 위한 Dockerfile 구성
   - [4.1 코드로 개발하는 컨테이너 인프라, Dockerfile](04.dockerfile_config/04-1.iac&dockerfile.md)
   - 4.2 Dockerfile 명령어와 이미지 빌드
-    - [4.2.1 Dockerfile 명령어](04.dockerfile_config/04-2.dockerfile_command&build.md)
+    - [4.2.1 Dockerfile 명령어](04.dockerfile_config/04-1.iac&dockerfile.md)
     - [4.2.2 이미지 생성을 위한 Dockerfile 빌드](04.dockerfile_config/04-3.dockerfile_build.md)
   - [4.3 Dockerfile을 활용한 다양한 이미지 생성](04.dockerfile_config/04-4.dockerfile_image_creation.md)
   - [4.4 깃허브를 활용한 Dockerfile 코드 공유](04.dockerfile_config/04-5.dockerfile_github.md)

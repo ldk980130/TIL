@@ -61,8 +61,8 @@
   - [10.1 통계 정보](10-explain-plan/10.1-stat_information.md) 
   - [10.2 실행 계획 확인](10-explain-plan/10.2-explain_plain_check.md) 
   - 10.3 실행 계획 분석
-    - [10.3(1) 실행 계획 분석(id, select_type)](10-explain-plan/10.3-1-explain_column(id&select_type).md)
-    - [10.3(2) 실행 계획 분석(table, partitions)](10-explain-plan/10.3-2-explain_column(table&partitions).md)
-    - [10.3(3) 실행 계획 분석 (type)](10-explain-plan/10.3-3-explain_column(type).md)
-    - [10.3(4) 실행 계획 분석 (possible_keys, key, key_len, ref, rows, filtered)](10-explain-plan/10.3-4-explain_column(possible_keys&key&key_len&ref&rows,&filtered).md)
-    - [10.3(5) 실행 계획 분석 (Extra)](10-explain-plan/10.3-5-explain_column(extra).md)
+    - [10.3(1) 실행 계획 분석(id, select_type)](10-explain-plan/10.3-1-id&select_type.md)
+    - [10.3(2) 실행 계획 분석(table, partitions)](10-explain-plan/10.3-2-table&partitions.md)
+    - [10.3(3) 실행 계획 분석 (type)](10-explain-plan/10.3-3-type.md)
+    - [10.3(4) 실행 계획 분석 (possible_keys, key, key_len, ref, rows, filtered)](10-explain-plan/10.3-4-possible_keys&key&key_len&ref&rows,&filtered.md)
+    - [10.3(5) 실행 계획 분석 (Extra)](10-explain-plan/10.3-5-extra.md)
