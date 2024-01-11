@@ -19,11 +19,7 @@
 - 📗[자바 최적화](java/optimizing-java/index.md)
 
 ### JPA
-- [인프런 강의](jpa/lecture)
-  - [자바 ORM 표준 JPA 프로그래밍 기본편](jpa/lecture/basic)
-  - [실전 스프링 데이터 JPA](jpa/lecture/spring-data-jpa)
-  - [실전 Querydsl](jpa/lecture/querydsl)
-  - [활용편 정리](jpa/lecture/tuning)
+- [인프런 강의](jpa/lecture/index.md)
 
 ### TEST
 - [junit](test/junit)
