@@ -2,11 +2,7 @@
 
 ### SPRING
 - [공식 문서](spring/docs/index.md)
-- [인프런 강의](spring/lecture)
-  - [스프링 핵심 원리 기본편](spring/lecture/basic)
-  - [mvc1](spring/lecture/mvc1)
-  - [mvc2](spring/lecture/mvc2)
-  - [스프링 힉샘 원리 고급편](spring/lecture/advance)
+- [인프런 강의](spring/lecture/index.md)
 - 📗[토비의 스프링](spring/toby-spring)
 
 ### JAVA
