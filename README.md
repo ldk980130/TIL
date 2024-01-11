@@ -38,15 +38,12 @@
 - [부하 테스트 도구](infra/performance-test/performance-test-tools.md)
 
 ### DATABASE
-- [mysql](database/mysql)
-  - 📗[Real MySQL](database/mysql/real-my-sql)
-  - [concurrency control](database/mysql/concurrency-control)
-  - [index](database/mysql/index)
-  - [sql](database/mysql/sql)
-- [데이터 분할](database/distributed-data)
-- [데드락 해결기](database/deadlock-troubleshooting.md)
+- [MySQL](database/mysql/index.md)
+  - 📗[Real MySQL](database/mysql/real-my-sql/index.md)
 - [NoSQL](database/nosql)
   - [Redis](database/nosql/redis)
+- [파티셔닝, 샤딩, 레플리케이션](database/distributed-data/partitioning&sharding&replication.md)
+- [데드락 해결기](database/deadlock-troubleshooting.md)
 
 ### DESIGN
 - 📗[클린 아키텍처](design/clean-architecture)
