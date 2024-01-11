@@ -31,9 +31,8 @@
   - 📗[따라하며 배우는 AWS 네트워크 입문](infra/aws/intro-aws-network-to-follow-learn/index.md)
 - 리눅스
   - [명령어](infra/linux/command.md)
-- [nginx](infra/nginx)
-- [message queue](infra/message-queue)
-  - [kafka](infra/message-queue/kafka)
+- [NGINX](infra/nginx/index.md)
+- [Message Queue](infra/message-queue/index.md)
 - [도커](infra/docker)
   - 📗[도커 컨테이너 빌드 업](infra/docker/docker_container_buildup)
 - 📗[가상 면접 사례로 배우는 대규모 시스템 설계 기초](infra/system_design_interview)
