@@ -89,12 +89,14 @@ ex) 웹, 모바일 등이 만들어져도 서버엔 변화가 적고 트래픽�
 ### 시작 라인
 **요청 메시지**
 > GET /search?q=hello&hl=ko HTTP/1.1
+
 - HTTP 메서드 (Get)
 - 요청 대상 (/search?q=hello&hl=ko)
 - HTTP 버전 (1.1)
 
 **응답 메시지**
 > HTTP/1.1 200 OK
+
 - HTTP 버전
 - 상태 코드
 - 이유 문구: 사람이 이해할 수 있는 짧은 상태 코드 설명 글
@@ -105,6 +107,7 @@ ex) 웹, 모바일 등이 만들어져도 서버엔 변화가 적고 트래픽�
 > Content-Type: text/html;charset=UTF-8
 > 
 > Content-Length: 3423
+
 - header-field = field-name ":" OWS field-value OWS
   - (OWS:띄어쓰기 허용)
 - field-name은 대소문자 구분 없음
@@ -112,6 +115,7 @@ ex) 웹, 모바일 등이 만들어져도 서버엔 변화가 적고 트래픽�
 - 예) 메시지 바디 내용, 크기, 압축, 인증, 요청 클라이언트 정보, 서버 애플리케이션 정보, 캐시 관리 정보...
 - 표준 헤더가 너무 많음
 - 필요 시 임의의 헤더 추가 가능
+
 ### HTTP 메시지 바디
 
 - 실제 전송할 데이터

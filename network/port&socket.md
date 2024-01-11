@@ -73,7 +73,9 @@
 - 서버의 여러 소켓을 식별하는 방법
     - 새로운 커넥션 요청은 listening socket에 전달
     - 이미 커넥션이 성립된 소켓은 <source IP, source Port, 서버 IP, 서버 Port>로 식별한다.
+
 ---
+
 https://www.baeldung.com/cs/port-vs-socket
 
 https://on1ystar.github.io/socket%20programming/2021/03/16/socket-1/
