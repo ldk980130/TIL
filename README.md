@@ -3,7 +3,7 @@
 ### SPRING
 - [공식 문서](spring/docs/index.md)
 - [인프런 강의](spring/lecture/index.md)
-- 📗[토비의 스프링](spring/toby-spring)
+- 📗[토비의 스프링](spring/toby-spring/index.md)
 
 ### JAVA
 - [jvm](java/jvm)
