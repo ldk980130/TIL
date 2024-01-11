@@ -47,7 +47,7 @@
 
 ### DESIGN
 - 📗[클린 아키텍처](design/clean-architecture/index.md)
-- 📗[만들면서 배우는 클린 아키텍처](design/clean-architecture-hands-on)
+- 📗[만들면서 배우는 클린 아키텍처](design/clean-architecture-hands-on/index.md)
 - 📗[도메인 주도 개발 시작하기](design/domain-driven-design)
 - 📗[오브젝트](design/object)
 - 📗[마이크로서비스 패턴](design/microservice-pattern)
