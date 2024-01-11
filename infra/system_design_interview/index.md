@@ -1,0 +1,17 @@
+## 가상 면접 사례로 배우는 대규모 시스템 설계 기초
+
+- [1장 사용자 수에 따른 규모 확장성](01.scale-by-user_scalability.md)
+- [2장 개략적인 규모 추정](02.rough_scale_measurement.md)
+- [3장 시스템 설계 면접 공략법](03.system_design_interview_tip.md)
+- [4장 처리율 제한 장치의 설계](04.rate-limiter.md)
+- [5장 안정 해시 설계](05.consistent-hash.md)
+- [6장 키-값 저장소 설계](06.key-value-storage.md)
+- [7장 분산 시스템을 위한 유일 ID 생성기 설계](07.unique-id.md)
+- [8장 URL 단축기 설계](08.url-shortening.md)
+- [9장 웹 크롤러 설계](09.web-crawler.md)
+- [10장 알림 시스템 설계](10.push_notification_system.md)
+- [11장 뉴스 피드 시스템 설계](11.news_feed_system.md)
+- [12장 채팅 시스템 설계](12.chatting-system.md)
+- [13장 검색어 자동 완성 시스템](13.query-auto-completion.md)
+- [14장 유튜브 설계](14.youtube-dessign.md)
+- [15장 구글 드라이브 설계](15.google-drive.md)
