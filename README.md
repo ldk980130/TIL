@@ -26,16 +26,18 @@
   - [Junit Extension](test/junit/junit-extension.md)
 
 ### INFRA
-- [aws](infra/aws)
+- [AWS](infra/aws/index.md)
   - 📗[aws 인프라 구축 가이드](infra/aws/aws-infra-deployment-guide)
   - 📗[따라하며 배우는 AWS 네트워크 입문](infra/aws/intro-aws-network-to-follow-learn)
-- [linux](infra/linux)
+- 리눅스
+  - [명령어](infra/linux/command.md)
 - [nginx](infra/nginx)
 - [message queue](infra/message-queue)
   - [kafka](infra/message-queue/kafka)
 - [도커](infra/docker)
   - 📗[도커 컨테이너 빌드 업](infra/docker/docker_container_buildup)
 - 📗[가상 면접 사례로 배우는 대규모 시스템 설계 기초](infra/system_design_interview)
+- [부하 테스트 도구](infra/performance-test/performance-test-tools.md)
 
 ### DATABASE
 - [mysql](database/mysql)
