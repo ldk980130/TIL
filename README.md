@@ -16,7 +16,7 @@
   - [가상 스레드](java/thread/virtual-thread.md)
   - [스레드 풀](java/thread/threadpool.md)
 - 📗[이펙티브 자바](java/effective-java/index.md)
-- 📗[자바 최적화](java/optimizing-java)
+- 📗[자바 최적화](java/optimizing-java/index.md)
 
 ### JPA
 - [인프런 강의](jpa/lecture)
