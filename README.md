@@ -1,4 +1,4 @@
-# Today I Learned
+# INDEX
 
 ### SPRING
 - [공식 문서](spring/docs/index.md)
@@ -6,12 +6,17 @@
 - 📗[토비의 스프링](spring/toby-spring/index.md)
 
 ### JAVA
-- [jvm](java/jvm)
-- [data access](java/data-access)
+- JVM
+  - [JVM](java/jvm/jvm.md)
+  - [GC](java/jvm/garbage-collector.md)
+  - [GC 알고리즘](java/jvm/gc-algorithm.md)
+- data access
+  - [커넥션 풀](java/data-access/connection-pool.md)
+- 스레드
+  - [가상 스레드](java/thread/virtual-thread.md)
+  - [스레드 풀](java/thread/threadpool.md)
 - 📗[이펙티브 자바](java/effective-java)
-- [thread pool](java/threadpool.md)
 - 📗[자바 최적화](java/optimizing-java)
-- [가상 스레드](java/virtual-thread.md)
 
 ### JPA
 - [인프런 강의](jpa/lecture)
