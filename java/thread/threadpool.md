@@ -62,7 +62,7 @@
 자바에서 스레드는 운영체제의 리소스인 system-level 스레드에 매핑된다. 만약 스레드를 무한으로 생성한다면 리소스는 빠르게 소진될 것이다.
 
 스레드 풀은 멀티 스레드 환경에서 리소스를 적약하고 미리 정의된 제한에서 병렬 처리를 하도록 도와준다.
-![img.png](../image/executor-service.png)
+![img.png](../../image/executor-service.png)
 ### 자바에서의 스레드 풀
 
 - *****Executors*, *Executor* and *ExecutorService***
