@@ -1,14 +1,7 @@
 # Today I Learned
 
 ### SPRING
-- [공식 문서](spring/docs)
-  - [batch](spring/docs/batch)
-  - [core](spring/docs/core)
-  - [data access](spring/docs/data-access)
-  - [test](spring/docs/test)
-  - [web servlet](spring/docs/web-servelet)
-  - [spring security](spring/docs/spring-security)
-  - [integration](spring/docs/integration)
+- [공식 문서](spring/docs/index.md)
 - [인프런 강의](spring/lecture)
   - [스프링 핵심 원리 기본편](spring/lecture/basic)
   - [mvc1](spring/lecture/mvc1)
