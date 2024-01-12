@@ -5,3 +5,4 @@
 - [3장 프로세스 간 통신](03.IPC.md)
 - [4장 트랜잭션 관리: 사가](04.trransaction-saga.md)
 - [5장 비즈니스 로직 설계](05.business-logic.md)
+- [6장 비즈니스 로직 개발: 이벤트 소싱](06.event-sourcing.md)
