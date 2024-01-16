@@ -8,3 +8,4 @@
 - [06 메시지와 인터페이스](06.message&interface.md)
 - [07 객체 분해](07.object-decomposition.md)
 - [08 의존성 관리하기](08.dependency-management.md)
+- [09 유연한 설계](09.flexible-design.md)
