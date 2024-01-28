@@ -10,3 +10,4 @@
 - [08 의존성 관리하기](08.dependency-management.md)
 - [09 유연한 설계](09.flexible-design.md)
 - [10 상속과 코드 재사용](10.inheritance.md)
+- [11 합성과 유연한 설계](11.composition.md)
