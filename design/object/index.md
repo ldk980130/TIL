@@ -12,4 +12,4 @@
 - [10 상속과 코드 재사용](10.inheritance.md)
 - [11 합성과 유연한 설계](11.composition.md)
 - [12 다형성](12.polymorphism.md)
-- [13 서브클래싱과 서브 타이핑](13.subtyping&subclassing.md)
+- [13 서브클래싱과 서브타이핑](13.subtyping&subclassing.md)
