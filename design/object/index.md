@@ -13,3 +13,4 @@
 - [11 합성과 유연한 설계](11.composition.md)
 - [12 다형성](12.polymorphism.md)
 - [13 서브클래싱과 서브타이핑](13.subtyping&subclassing.md)
+- [14 일관성 있는 협력](14.consistent_cooperation.md)
