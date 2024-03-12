@@ -8,3 +8,4 @@
 - [6장 비즈니스 로직 개발: 이벤트 소싱](06.event-sourcing.md)
 - [7장 마이크로서비스 쿼리 구현](07.cqrs.md)
 - [8장 외부 API 패턴](08.external-api-pattern.md)
+- [9장 마이크로서비스 테스트 1부](09.msa-test-1.md)
