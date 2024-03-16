@@ -1,5 +1,8 @@
 ## SPRING LECTURE
 
+### 토비의 스프링 부트 - 이해와 원리
+- [섹션 1. 스프링 부트 살펴 보기](topy-springboot/01.springboot-intro.md)
+
 ### 스프링 핵심 원리 기본편
 - [스프링이란](basic/intro.md)
 - [IoC, DI, 그리고 컨테이너](basic/ioc-di.md)
