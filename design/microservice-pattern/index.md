@@ -9,3 +9,4 @@
 - [7장 마이크로서비스 쿼리 구현](07.cqrs.md)
 - [8장 외부 API 패턴](08.external-api-pattern.md)
 - [9장 마이크로서비스 테스트 1부](09.msa-test-1.md)
+- [10장 마이크로서비스 테스트 2부](10.msa-test-2.md)
