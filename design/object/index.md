@@ -15,3 +15,4 @@
 - [13 서브클래싱과 서브타이핑](13.subtyping&subclassing.md)
 - [14 일관성 있는 협력](14.consistent_cooperation.md)
 - [15 디자인패턴과 프레임워크](15.design-pattern&framework.md)
+- [APPENDIX A. 계약에 의한 설계](appendixA.contract_by_design.md)
