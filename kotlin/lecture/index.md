@@ -2,3 +2,4 @@
 - [Lec 01. 코틀린에서 변수를 다루는 방법](java-to-kotlin-starter-guide/01.variable.md)
 - [Lec 02. 코틀린에서 null을 다루는 법](java-to-kotlin-starter-guide/02.nullable.md)
 - [Lec 03. 코틀린에서 Type을 다루는 방법](java-to-kotlin-starter-guide/03.type.md)
+- [Lec 04. 코틀린에서 연산자를 다루는 방법](java-to-kotlin-starter-guide/04.operator.md)
