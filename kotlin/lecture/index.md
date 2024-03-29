@@ -6,3 +6,4 @@
   - [Lec 04. 코틀린에서 연산자를 다루는 방법](java-to-kotlin-starter-guide/04.operator.md)
 - 섹션 2. 코틀린에서 코드를 제어하는 방법
   - [Lec 05. 코틀린에서 제어문을 다루는 방법](java-to-kotlin-starter-guide/05.control.md)
+  - [Lec 06. 코틀린에서 반복문을 다루는 방법](java-to-kotlin-starter-guide/06.loop.md)
