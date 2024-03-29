@@ -8,3 +8,4 @@
   - [Lec 05. 코틀린에서 제어문을 다루는 방법](java-to-kotlin-starter-guide/05.control.md)
   - [Lec 06. 코틀린에서 반복문을 다루는 방법](java-to-kotlin-starter-guide/06.loop.md)
   - [Lec 07. 코틀린에서 예외를 다루는 방법](java-to-kotlin-starter-guide/07.exception.md)
+  - [Lec 08. 코틀린에서 함수를 다루는 방법](java-to-kotlin-starter-guide/08.function.md)
