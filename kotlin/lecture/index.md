@@ -13,3 +13,4 @@
   - [Lec 09. 코틀린에서 클래스를 다루는 방법](java-to-kotlin-starter-guide/09.class.md)
   - [Lec 10. 코틀린에서 상속을 다루는 법](java-to-kotlin-starter-guide/10.ingeritance.md)
   - [Lec 11. 코틀린에서 접근 제어를 다루는 방법](java-to-kotlin-starter-guide/11.visibility.md)
+  - [Lec 12. 코틀린에서 object 키워드를 다루는 방법](java-to-kotlin-starter-guide/12.object.md)
