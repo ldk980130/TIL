@@ -11,3 +11,4 @@
   - [Lec 08. 코틀린에서 함수를 다루는 방법](java-to-kotlin-starter-guide/08.function.md)
 - 섹션 3. 코틀린에서의 OOP
   - [Lec 09. 코틀린에서 클래스를 다루는 방법](java-to-kotlin-starter-guide/09.class.md)
+  - [Lec 10. 코틀린에서 상속을 다루는 법](java-to-kotlin-starter-guide/10.ingeritance.md)
