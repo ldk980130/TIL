@@ -15,3 +15,4 @@
   - [Lec 11. 코틀린에서 접근 제어를 다루는 방법](java-to-kotlin-starter-guide/11.visibility.md)
   - [Lec 12. 코틀린에서 object 키워드를 다루는 방법](java-to-kotlin-starter-guide/12.object.md)
   - [Lec 13. 코틀린에서 중첩 클래스를 다루는 방법](java-to-kotlin-starter-guide/13.nested-class.md)
+  - [Lec 14. 코틀린에서 다양한 클래스를 다루는 방법](java-to-kotlin-starter-guide/14.extra-class.md)
