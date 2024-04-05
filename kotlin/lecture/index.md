@@ -16,5 +16,7 @@
   - [Lec 12. 코틀린에서 object 키워드를 다루는 방법](java-to-kotlin-starter-guide/12.object.md)
   - [Lec 13. 코틀린에서 중첩 클래스를 다루는 방법](java-to-kotlin-starter-guide/13.nested-class.md)
   - [Lec 14. 코틀린에서 다양한 클래스를 다루는 방법](java-to-kotlin-starter-guide/14.extra-class.md)
-- 섹션 5 추가적으로 알아두어야 할 코틀린 특성
+- 섹션 4. 코틀린에서의 FP
+  - [Lec 15. 코틀린에서 배열과 컬렉션을 다루는 방법](java-to-kotlin-starter-guide/15.array&list.md)
+- 섹션 5. 추가적으로 알아두어야 할 코틀린 특성
   - [Lec 20. 코틀린의 scope function](java-to-kotlin-starter-guide/20.scope-function.md)
