@@ -20,5 +20,6 @@
   - [Lec 15. 코틀린에서 배열과 컬렉션을 다루는 방법](java-to-kotlin-starter-guide/15.array&list.md)
   - [Lec 16. 코틀린에서 다양한 함수를 다루는 방법](java-to-kotlin-starter-guide/16.function.md)
   - [Lec 17. 코틀린에서 람다를 다루는 방법](java-to-kotlin-starter-guide/17.lambda.md)
+  - [Lec 18. 코틀린에서 컬렉션을 함수형으로 다루는 방법](java-to-kotlin-starter-guide/18.collection-fp.md)
 - 섹션 5. 추가적으로 알아두어야 할 코틀린 특성
   - [Lec 20. 코틀린의 scope function](java-to-kotlin-starter-guide/20.scope-function.md)
