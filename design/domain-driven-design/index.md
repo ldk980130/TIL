@@ -4,6 +4,7 @@
 - [Chapter2 아키텍처 개요](02-architecture.md)
 - [Chapter3 애그리거트](03-aggregate.md)
 - [Chapter4 리포지터리와 모델 구현](04-repository&model_impl.md)
+- [Chapter5 스프링 데이터 JPA를 이용한 조회 기능](05.spring-data-jpa-query.md)
 - [Chapter6 응용 서비스 표현 영역](06-application&presentation.md)
 - [Chapter7 도메인 서비스](07-domain_service.md)
 - [Chapter8 애그리거트 트랜잭션 관리](08-aggrage_transaction.md)
