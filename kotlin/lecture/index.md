@@ -24,3 +24,6 @@
   - [Lec 19. 코틀린의 이모저모](java-to-kotlin-starter-guide/19.kotlin-etc.md)
 - 섹션 5. 추가적으로 알아두어야 할 코틀린 특성
   - [Lec 20. 코틀린의 scope function](java-to-kotlin-starter-guide/20.scope-function.md)
+
+### 2시간으로 끝내는 코루틴
+- [1강 루틴과 코루틴](coroutine/01.routine%26coroutine.md)
