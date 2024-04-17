@@ -27,3 +27,4 @@
 
 ### 2시간으로 끝내는 코루틴
 - [1강 루틴과 코루틴](coroutine/01.routine%26coroutine.md)
+- [2강 스레드와 코루틴](coroutine/02.thread&coroutine.md)
