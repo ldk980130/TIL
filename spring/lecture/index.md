@@ -4,6 +4,7 @@
 - [섹션 1. 스프링 부트 살펴 보기](topy-springboot/01.springboot-intro.md)
 - [섹션 3 독립 실행형 서블릿 애플리케이션](topy-springboot/03.stand-alone-servlet-app.md)
 - [섹션 4 독립 실행형 스프링 애플리케이션](topy-springboot/04.stand-alond-spring-app.md)
+- [섹션 6. 자동 구성 기반 애플리케이션](topy-springboot/06.auto-configuration.md)
 
 ### 스프링 핵심 원리 기본편
 - [스프링이란](basic/intro.md)
