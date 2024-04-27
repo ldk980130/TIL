@@ -26,7 +26,7 @@
   - [Lec 20. 코틀린의 scope function](java-to-kotlin-starter-guide/20.scope-function.md)
 
 ### 2시간으로 끝내는 코루틴
-- [1강 루틴과 코루틴](coroutine/01.routine%26coroutine.md)
+- [1강 루틴과 코루틴](coroutine/01.routine&coroutine.md)
 - [2강 스레드와 코루틴](coroutine/02.thread&coroutine.md)
 - [3강 코루틴 빌더와 Job](coroutine/03.coroutine-builder&job.md)
 - [4강 코루틴 취소](coroutine/04.coroutine-cancel.md)
