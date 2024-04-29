@@ -31,3 +31,4 @@
 - [3강 코루틴 빌더와 Job](coroutine/03.coroutine-builder&job.md)
 - [4강 코루틴 취소](coroutine/04.coroutine-cancel.md)
 - [5강 코루틴의 예외 처리와 Job의 상태 변화](coroutine/05.coroutine-exception.md)
+- [6강 Structured Concurrency](coroutine/06.structured-concurrency.md)
