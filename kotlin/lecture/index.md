@@ -32,3 +32,4 @@
 - [4강 코루틴 취소](coroutine/04.coroutine-cancel.md)
 - [5강 코루틴의 예외 처리와 Job의 상태 변화](coroutine/05.coroutine-exception.md)
 - [6강 Structured Concurrency](coroutine/06.structured-concurrency.md)
+- [7강 CoroutineScope와 CoroutineContext](coroutine/07.coroutine-scope&coroutine-context.md)
