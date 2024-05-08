@@ -16,3 +16,4 @@
 - [14 일관성 있는 협력](14.consistent_cooperation.md)
 - [15 디자인패턴과 프레임워크](15.design-pattern&framework.md)
 - [APPENDIX A. 계약에 의한 설계](appendixA.contract_by_design.md)
+- [APPENDIX B. 타입 계층의 구현](appendixB.type-hierarchy.md)
