@@ -17,3 +17,4 @@
 - [15 디자인패턴과 프레임워크](15.design-pattern&framework.md)
 - [APPENDIX A. 계약에 의한 설계](appendixA.contract_by_design.md)
 - [APPENDIX B. 타입 계층의 구현](appendixB.type-hierarchy.md)
+- [APPENDIX C. 동적인 협력, 정적인 코드](appendixC.dynamic-static.md)
