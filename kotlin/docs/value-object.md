@@ -153,7 +153,7 @@ fun compute(x: UInt) { }
 
 ## Inline classes and delegation
 
-- 인터페이서에서 인라인 클래스의 인라인 값에 대한 위임 구현이 허용된다.
+- 인터페이스에서 인라인 클래스의 인라인 값에 대한 위임 구현이 허용된다.
 
 ```kotlin
 interface MyInterface {
