@@ -3,3 +3,4 @@
 - [Chapter 02 안 쓰는 코드](02.erase-unuse-code.md)
 - [Chapter 03 대칭으로 맞추기](03.symmetry.md)
 - [Chapter 04 새로운 인터페이스로 기존 루틴 부르기](04.pass-trougth-interface.md)
+- [Chapter 05 읽는 순서](05.read-order.md)
