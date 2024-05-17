@@ -4,3 +4,4 @@
 - [Chapter 03 대칭으로 맞추기](03.symmetry.md)
 - [Chapter 04 새로운 인터페이스로 기존 루틴 부르기](04.pass-trougth-interface.md)
 - [Chapter 05 읽는 순서](05.read-order.md)
+- [Chapter 06 응집도를 높이는 배치](06.cohension.md)
