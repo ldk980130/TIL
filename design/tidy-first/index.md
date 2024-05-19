@@ -5,3 +5,5 @@
 - [Chapter 04 새로운 인터페이스로 기존 루틴 부르기](04.pass-trougth-interface.md)
 - [Chapter 05 읽는 순서](05.read-order.md)
 - [Chapter 06 응집도를 높이는 배치](06.cohension.md)
+- [Chapter 07 선언과 초기화를 함께 옮기기](07.declare%26init.md)
+- [Chapter 08 설명하는 변수](08.explain-variable.md)
