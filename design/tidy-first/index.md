@@ -10,3 +10,5 @@
 - [Chapter 09 설명하는 상수](09.explain-const.md)
 - [Chapter 10 명시적인 매개변수](10.explicit-argument.md)
 - [Chapter 11 비슷한 코드끼리](11.grouping-code.md)
+- [Chapter 12 도우미 추출](12.helper.md)
+- [Chapter 13 하나의 더미](13.one-dummy.md)
