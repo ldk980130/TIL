@@ -12,3 +12,4 @@
 - [Chapter 11 비슷한 코드끼리](11.grouping-code.md)
 - [Chapter 12 도우미 추출](12.helper.md)
 - [Chapter 13 하나의 더미](13.one-dummy.md)
+- [Chapter 14 설명하는 주석](14.explain-annotation.md)
