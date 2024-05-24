@@ -14,3 +14,6 @@
 - [Chapter 13 하나의 더미](13.one-dummy.md)
 - [Chapter 14 설명하는 주석](14.explain-annotation.md)
 - [Chapter 15 불필요한 주석 지우기](15.delete-unuse-annotation.md)
+
+### PART 02 관리
+- [Chapter 16 코드 정리 구분](16.tidy-division.md)
