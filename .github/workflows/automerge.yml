@@ -13,13 +13,9 @@ jobs:
         with:
           format: YYYY-MM-DD
           utcOffset: "+09:00"
-      - name: set env date
-        env:
-          F_DATE: "${{ steps.current-time.outputs.formattedTime }}"
-        run: echo DATE
       - name: automerge
         uses: "pascalgn/automerge-action@v0.15.6"
         env:
-          MERGE_LABELS: "${{F_DATE}}"
+          MERGE_LABELS: "${{steps.current-time.outputs.formattedTime}}"
           MERGE_METHOD: "squash"
           GITHUB_TOKEN: "${{ secrets.TOKEN }}"
