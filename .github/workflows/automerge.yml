@@ -17,6 +17,7 @@ on:
     branches: ["main"]
 jobs:
   current-time:
+    runs-on: ubuntu-latest
     steps:
       - name: Get current time
         uses: josStorer/get-current-time@v2
