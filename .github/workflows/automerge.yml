@@ -14,8 +14,7 @@
 #          GITHUB_TOKEN: "${{ secrets.TOKEN }}"
 on:
   push:
-    branches:
-      - main
+    branches: ["main"]
 jobs:
   current-time:
     steps:
