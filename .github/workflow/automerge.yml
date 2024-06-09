@@ -1,0 +1,35 @@
+#name: PR auto merge
+#on:
+#  schedule:
+#    - cron: '0 9 * * *'
+#jobs:
+#  automerge:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: automerge
+#        uses: "pascalgn/automerge-action@v0.15.6"
+#        env:
+#          MERGE_LABELS: ""
+#          MERGE_METHOD: "squash"
+#          GITHUB_TOKEN: "${{ secrets.TOKEN }}"
+on:
+  push:
+    branches:
+      - main
+jobs:
+  current-time:
+    steps:
+      - name: Get current time
+        uses: josStorer/get-current-time@v2
+        id: current-time
+        with:
+          format: YYYYMMDD-HH
+          utcOffset: "+09:00"
+      - name: Use current time
+        env:
+          TIME: "${{ steps.current-time.outputs.time }}"
+          R_TIME: "${{ steps.current-time.outputs.readableTime }}"
+          F_TIME: "${{ steps.current-time.outputs.formattedTime }}"
+          YEAR: "${{ steps.current-time.outputs.year }}"
+          DAY: "${{ steps.current-time.outputs.day }}"
+        run: echo $TIME $R_TIME $F_TIME $YEAR $DAY
