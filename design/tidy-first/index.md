@@ -19,3 +19,4 @@
 - [Chapter 16 코드 정리 구분](16.tidy-division.md)
 - [Chapter 17 연쇄적인 정리](17.tidy-chain.md)
 - [Chapter 18 코드 정리의 일괄 처리량](18.tidy-code-batch.md)
+- [Chapter 19 리듬](19.rythm.md)
