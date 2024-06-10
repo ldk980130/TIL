@@ -2,7 +2,7 @@ name: PR auto merge
 on:
   workflow_dispatch:
   schedule:
-    - cron: '5 3 * * *' # 12시 5분
+    - cron: '0 0 * * *' # 12시 5분
 jobs:
   automerge:
     runs-on: ubuntu-latest
