@@ -1,1 +1,2 @@
 - [value object](value-object.md)
+- [class(constructor)](class.md)
