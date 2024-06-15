@@ -16,5 +16,6 @@ jobs:
         uses: "pascalgn/automerge-action@v0.15.6"
         env:
           MERGE_LABELS: "${{steps.current-time.outputs.formattedTime}}"
-          MERGE_METHOD: "squash"
+          MERGE_METHOD: "merge"
+          MERGE_COMMIT_MESSAGE: "pull-request-title"
           GITHUB_TOKEN: "${{ secrets.TOKEN }}"
