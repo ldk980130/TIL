@@ -4,4 +4,5 @@
 - [3장 레디스 기본 개념 (자료 구조)](03-1.redis-basic.md)
 - [3장 레디스 기본 개념 (키 관리)](03-2.redis-basic.md)
 - [4장 레디스 자료 구조 활용 사례](04.redis-usage.md)
+- [5장 레디스를 캐시로 사용하기](05.redis-cache.md)
 - [6장 레디스를 메시지 브로커로 사용하기](06.redis-message-broker.md)
