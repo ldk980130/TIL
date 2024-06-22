@@ -21,3 +21,4 @@
 - [Chapter 18 코드 정리의 일괄 처리량](18.tidy-code-batch.md)
 - [Chapter 19 리듬](19.rythm.md)
 - [Chapter 20 얽힘 풀기](20.untangle.md)
+- [Chapter 21 코드 정리 시점](21.code-tidy-time.md)
