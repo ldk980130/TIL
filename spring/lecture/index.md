@@ -6,6 +6,7 @@
 - [섹션 4 독립 실행형 스프링 애플리케이션](topy-springboot/04.stand-alond-spring-app.md)
 - [섹션 6. 자동 구성 기반 애플리케이션](topy-springboot/06.auto-configuration.md)
 - [섹션 7. 조건부 자동 구성](topy-springboot/07.conditional-autoconfig.md)
+- [섹션 8. 외부 설정을 이용한 자동 구성](topy-springboot/08.external-auto-config.md)
 
 ### 스프링 핵심 원리 기본편
 - [스프링이란](basic/intro.md)
