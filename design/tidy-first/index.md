@@ -26,3 +26,4 @@
 ### PART 03 이론
 - [Chapter 22 요소들을 유익하게 관계 맺는 일](22.element-connect-beneficial.md)
 - [Chapter 23 구조와 동작](23.structure-operation.md)
+- [Chapter 24 경제 이론: 시간 가치와 선택성](24.time-value%26option.md)
