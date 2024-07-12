@@ -29,3 +29,4 @@
 - [Chapter 24 경제 이론: 시간 가치와 선택성](24.time-value%26option.md)
 - [Chapter 25 오늘의 1달러가 내일의 1달러보다 크다](25.today-1dollar&tomorrow-1dollar.md)
 - [Chapter 26 옵션](26.option.md)
+- [Chapter 27 옵션과 현금흐름 비교](27.option&cash-flow.md)
