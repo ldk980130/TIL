@@ -30,3 +30,4 @@
 - [Chapter 25 오늘의 1달러가 내일의 1달러보다 크다](25.today-1dollar&tomorrow-1dollar.md)
 - [Chapter 26 옵션](26.option.md)
 - [Chapter 27 옵션과 현금흐름 비교](27.option&cash-flow.md)
+- [Chapter 28 되돌릴 수 있는 구조 변경](28.reversible-refactoring.md)
