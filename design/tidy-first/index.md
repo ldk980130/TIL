@@ -31,3 +31,4 @@
 - [Chapter 26 옵션](26.option.md)
 - [Chapter 27 옵션과 현금흐름 비교](27.option&cash-flow.md)
 - [Chapter 28 되돌릴 수 있는 구조 변경](28.reversible-refactoring.md)
+- [Chapter 29 결합도](29.coupling.md)
