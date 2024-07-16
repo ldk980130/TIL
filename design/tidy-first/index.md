@@ -33,3 +33,4 @@
 - [Chapter 28 되돌릴 수 있는 구조 변경](28.reversible-refactoring.md)
 - [Chapter 29 결합도](29.coupling.md)
 - [Chapter 30 콘스탄틴의 등가성](30.constantine-equivalence.md)
+- [Chapter 31 결합도와 결합도 제거](31.coupling-remove.md)
