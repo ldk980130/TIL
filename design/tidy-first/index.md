@@ -34,3 +34,5 @@
 - [Chapter 29 결합도](29.coupling.md)
 - [Chapter 30 콘스탄틴의 등가성](30.constantine-equivalence.md)
 - [Chapter 31 결합도와 결합도 제거](31.coupling-remove.md)
+- [Chapter 32 응집도](32.cohesion.md)
+- [Chapter 33 결론](33.conclusion.md)
