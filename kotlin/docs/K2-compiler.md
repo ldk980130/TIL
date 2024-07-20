@@ -129,6 +129,93 @@ fun runProcessor(): Processor? {
 }
 ```
 
+- **함수 타입의 프로퍼티**
+    - Kotlin 이전 버전에선 함수 타입 프로퍼티가 스마트 캐스팅되지 않았다.
+    - 2.0.0에서 이는 개선되었다.
+
+```kotlin
+class Holder(val provider: (() -> Unit)?) {
+    fun process() {
+        if (provider != null) {
+            // 컴파일러가 provider가 null이 아님을 안다.
+            provider()
+
+            // 이전 버전에서는 safe-call을 해야 했다.
+        }
+    }
+}
+```
+
+- **예외 핸들링**
+    - Kotlin 2.0.0에서는 예외 처리를 개선하여 스마트 캐스팅 정보를 `catch` 및 `finally` 블록에 전달할 수 있도록 했다.
+
+```kotlin
+fun testString() {
+    var stringInput: String? = null
+    // 값을 할당함으로써 non-null String 타입으로 스마트 캐스팅
+    stringInput = ""
+    try {
+        // 컴파일러는 null이 아님을 안다.
+        println(stringInput.length)
+        // 0
+
+        // 컴파일러는 다시 String? 타입으로 인식
+        stringInput = null
+
+        // 예외를 발생시키기
+        if (2 > 1) throw Exception()
+        stringInput = ""
+    } catch (exception: Exception) {
+        // Kotlin 2.0.0에서 stringInput이 nullable임을 알아서 safe-call 수행
+        println(stringInput?.length)
+        // null
+
+        // Kotlin 1.9.20에선 safe-call이 필요하지 않다고 말할 것이다.
+    }
+}
+```
+
+- **증감 연산자**
+    - 이전 버전에선 컴파일러가 증감 연산자 사용 후 객체 타입이 변경될 수 있다는 사실을 이해하지 못했다.
+        - 참조 오류가 발생할 수 있음
+    - 2.0.0에선 수정되었다.
+
+```kotlin
+interface Rho {
+    operator fun inc(): Sigma = TODO()
+}
+
+interface Sigma : Rho {
+    fun sigma() = Unit
+}
+
+interface Tau {
+    fun tau() = Unit
+}
+
+fun main(input: Rho) {
+    var unknownObject: Rho = input
+
+    // unknownObject는 Rho와 Tau 타입이 모두 될 수 있다.
+    if (unknownObject is Tau) {
+
+        // Rho 타입으로써 inc 증가 연산자를 호출
+        // Kotlin 2.0.0에선 Sigma 타입으로 스마트 캐스팅 된다.
+        ++unknownObject
+
+        // 때문에 Sigma 타입의 sigma() 함수를 성공적으로 호출한다.
+        unknownObject.sigma()
+        
+        // In Kotlin 2.0.0에선 컴파일러기 unknownObjet를 Sigma 타입이라
+        // 알고 있기에 아래 구문은 컴파일 에러가 발생한다.
+        unknownObject.tau()
+
+        // In Kotlin 1.9.20에선 컴파일 에러가 발생하지 않고 런타임에 
+        // ClassCastException이 발생한다.
+    }
+}
+```
+
 
 ---
 
