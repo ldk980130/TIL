@@ -6,3 +6,4 @@
 - [4장 레디스 자료 구조 활용 사례](04.redis-usage.md)
 - [5장 레디스를 캐시로 사용하기](05.redis-cache.md)
 - [6장 레디스를 메시지 브로커로 사용하기](06.redis-message-broker.md)
+- [7장 레디스 데이터 백업 방법](07.data-backup.md)
