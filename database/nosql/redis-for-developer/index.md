@@ -7,3 +7,4 @@
 - [5장 레디스를 캐시로 사용하기](05.redis-cache.md)
 - [6장 레디스를 메시지 브로커로 사용하기](06.redis-message-broker.md)
 - [7장 레디스 데이터 백업 방법](07.data-backup.md)
+- [8장 복제](08.replica.md)
