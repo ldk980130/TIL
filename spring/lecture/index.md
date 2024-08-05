@@ -8,6 +8,9 @@
 - [섹션 7. 조건부 자동 구성](topy-springboot/07.conditional-autoconfig.md)
 - [섹션 8. 외부 설정을 이용한 자동 구성](topy-springboot/08.external-auto-config.md)
 
+### 토비의 스프링6 - 이해와 원리
+- [섹션 2 오브젝트와 의존관계](toby-spring6/02.object%26dependency.md)
+
 ### 스프링 핵심 원리 기본편
 - [스프링이란](basic/intro.md)
 - [IoC, DI, 그리고 컨테이너](basic/ioc-di.md)
