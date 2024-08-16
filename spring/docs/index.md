@@ -45,3 +45,4 @@
 스프링 모듈리스란 스프링부트로 도메인 주도, 모듈형 애플리케이션을 구축하기 위한 도구
 
 - [Fundamentals](modulith/01.fundamentals.md)
+- [Verifying Application Module Structure](modulith/02.verifying.md)
