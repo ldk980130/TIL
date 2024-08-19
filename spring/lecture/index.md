@@ -13,6 +13,7 @@
 - [섹션 2 오브젝트와 의존관계](toby-spring6/02.object&dependency.md)
 - [섹션 3 테스트](toby-spring6/03.test.md)
 
+
 ### 스프링 핵심 원리 기본편
 - [스프링이란](basic/intro.md)
 - [IoC, DI, 그리고 컨테이너](basic/ioc-di.md)
