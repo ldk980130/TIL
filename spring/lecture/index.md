@@ -12,6 +12,7 @@
 ### 토비의 스프링6 - 이해와 원리
 - [섹션 3 오브젝트와 의존관계](toby-spring6/03.object&dependency)
 - [섹션 4 테스트](toby-spring6/04.test)
+- [섹션 5 탬플릿](toby-spring6/05.template)
 
 
 ### 스프링 핵심 원리 기본편
