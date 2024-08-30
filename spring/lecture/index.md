@@ -13,6 +13,7 @@
 - [섹션 3. 오브젝트와 의존관계](toby-spring6/03.object&dependency.md)
 - [섹션 4. 테스트](toby-spring6/04.test.md)
 - [섹션 5. 탬플릿](toby-spring6/05.template.md)
+- [섹션 6. 예외](toby-spring6/06.exception.md)
 
 
 ### 스프링 핵심 원리 기본편
