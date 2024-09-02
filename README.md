@@ -58,6 +58,7 @@
 - 📗[마이크로서비스 패턴](design/microservice-pattern/index.md)
 - 📗[Tidy First?](design/tidy-first/index.md)
 - [클린아키텍처 애매한 부분 정리해드립니다](design/NHN_FORWARD22_clean_architecture.md)
+- [소프트웨어와 복잡성](design/software&complexity.md)
 
 ### NETWORK
 - [http](network/http/index.md)
