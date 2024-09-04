@@ -15,6 +15,7 @@
 - [섹션 5. 탬플릿](toby-spring6/05.template.md)
 - [섹션 6. 예외](toby-spring6/06.exception.md)
 - [섹션 7. 서비스 추상화](toby-spring6/07.service-abstraction.md)
+- [섹션 8. 스프링 학습 방법](toby-spring6/08.spring-learn.md)
 
 
 ### 스프링 핵심 원리 기본편
