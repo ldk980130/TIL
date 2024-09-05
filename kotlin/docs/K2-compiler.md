@@ -216,6 +216,52 @@ fun main(input: Rho) {
 }
 ```
 
+## Kotlin Multiplatform
+
+K2 컴파일러에는 다음과 같은 영역에서 Kotlin 멀티플랫폼 관련 개선 사항이 있다.
+
+### 공통 소스와 플랫폼 소스 분리
+
+- 이전에는 Kotlin 컴파일러 설계상 컴파일 시 공통 소스와 플랫폼 소스 집합을 분리할 수 없었다.
+    - 때문에 공통 코드가 플랫폼 코드에 접근할 수 있어 서로 다른 동작이 발생할 수 있었음
+- 또한 공통 코드 일부 컴파일러 설정 및 종속성이 플랫폼 코드로 유출되기도 했다.
+
+```kotlin
+// Commmon code
+fun foo(x: Any) = println("common foo")
+
+fun exampleFunction() {
+  foo(42)
+}
+```
+
+```kotlin
+// Platform code
+// JVM
+fun foo(x: Int) = println("platform foo")
+
+// JavaScript
+// 자바스크립트 플랫폼에는 foo() 함수 오버로드가 없다.
+```
+
+- 위 예제에서는 공통 코드가 플랫폼에 따라 동작이 달라지는 것을 보여준다.
+    - JVM에선 공통 코드의 `foo`를 호출하면 플랫폼 코드의 `foo`가 호출된다. (`platform foo` 출력)
+    - 자바스크립트 플랫폼에선 공통 코드 foo`를` 호출하면 플랫폼 코드엔 해당 함수가 없어 공통 코드의 `foo`가 호출된다. (`common foo` 출력)
+- Kotlin 2.0.0에선 공통 코드가 플랫폼 코드에 엑세스할 수 없기 때문에 두 플랫폼 모두 공통 코드의 `foo` 함수를 호출한다. (`common foo` 출력)
+
+- 이 외에더 IntelliJ나 Android Studio 컴파일러 간 동작이 충돌하던 것들이 많이 개선되었다.
+
+### 예측 선언과 실제 선언의 서로 다른 가시성 수준
+
+- Kotlin 2.0.0 이전에는 멀티 플랫폼 프로젝트에서 예상 선언과 실제 선언을 사용하는 경우 가시성 수준이 같아야 했다.
+- 2.0.0부터는 서로 다른 가시성 수준도 지원한다.
+    - 하지만 실제 선언이 예상 선언보다 더 허용되는 경우만 가능
+
+```kotlin
+expect internal class Attribute // internal
+actual class Attribute          // public
+```
+
 
 ---
 
