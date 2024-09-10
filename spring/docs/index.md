@@ -46,4 +46,5 @@
 
 - [Fundamentals](modulith/01.fundamentals.md)
 - [Verifying Application Module Structure](modulith/02.verifying.md)
+- [Working with Application Events](modulith/03.application-events.md)
 - [Testing Application Modules](modulith/04.integration-test.md)
