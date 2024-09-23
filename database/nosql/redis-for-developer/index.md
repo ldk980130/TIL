@@ -9,3 +9,4 @@
 - [7장 레디스 데이터 백업 방법](07.data-backup.md)
 - [8장 복제](08.replica.md)
 - [9장 센티널](09.sentinel.md)
+- [10장 클러스터](10.cluster.md)
