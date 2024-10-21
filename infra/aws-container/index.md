@@ -6,3 +6,4 @@
   - [3-4 운영 설계](03-aws-container-architecture/3-4.operation-design.md)
   - [3-5 보안 설계](03-aws-container-architecture/3-5.security-design.md)
   - [3-6 안정성 설계](03-aws-container-architecture/3-6.stability.md)
+  - [3-7 성능 설계](03-aws-container-architecture/3-7.performance.md)
