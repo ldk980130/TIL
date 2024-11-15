@@ -5,3 +5,6 @@
 - [2장 데이터 모델과 쿼리 언어](part1_data-system-basic/02.data-model&query.md)
 - [3장 저장소와 검색](part1_data-system-basic/03.storage&query.md)
 - [4장 부호화의 발전](part1_data-system-basic/04.encoding.md)
+
+### Part 2 분산 데이터
+- [5장 복제](part2_distributed_data/05.replication.md)
