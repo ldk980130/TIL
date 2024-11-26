@@ -9,3 +9,4 @@
 ### Part 2 분산 데이터
 - [5장 복제](part2_distributed_data/05.replication.md)
 - [6장 파티셔닝](part2_distributed_data/06.partitioning.md)
+- [7장 트랜잭션](part2_distributed_data/07.transaction.md)
