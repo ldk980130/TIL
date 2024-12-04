@@ -10,3 +10,4 @@
 - [5장 복제](part2_distributed_data/05.replication.md)
 - [6장 파티셔닝](part2_distributed_data/06.partitioning.md)
 - [7장 트랜잭션](part2_distributed_data/07.transaction.md)
+- [8장 분산 시스템의 골칫거리](part2_distributed_data/08.distributed-system.md)
