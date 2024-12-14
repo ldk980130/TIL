@@ -11,3 +11,4 @@
 - [6장 파티셔닝](part2_distributed_data/06.partitioning.md)
 - [7장 트랜잭션](part2_distributed_data/07.transaction.md)
 - [8장 분산 시스템의 골칫거리](part2_distributed_data/08.distributed-system.md)
+- [09장 일관성과 합의](part2_distributed_data/09.consistency&agreement.md)
