@@ -12,3 +12,6 @@
 - [7장 트랜잭션](part2_distributed_data/07.transaction.md)
 - [8장 분산 시스템의 골칫거리](part2_distributed_data/08.distributed-system.md)
 - [09장 일관성과 합의](part2_distributed_data/09.consistency&agreement.md)
+
+### Part 3 파생 데이터
+- [10장 일괄 처리](part3_derived_data/10.batch_processing.md)
