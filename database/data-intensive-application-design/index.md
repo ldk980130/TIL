@@ -16,3 +16,4 @@
 ### Part 3 파생 데이터
 - [10장 일괄 처리](part3_derived_data/10.batch_processing.md)
 - [11장 스트림 처리](part3_derived_data/11.stream.md)
+- [12장 데이터 시스템의 미래](part3_derived_data/12.data-system-future.md)
