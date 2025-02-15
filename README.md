@@ -8,6 +8,7 @@
 ### KOTLIN
 - [공식 문서](kotlin/docs/index.md)
 - [인프런 강의](kotlin/lecture/index.md)
+- [Kotlin RPC](kotlin/kotlin-rpc.md)
 
 ### JAVA
 - JVM
