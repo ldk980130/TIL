@@ -2,4 +2,5 @@
 - [1장 근접성 서비스](01.proximity-service.md)
 - [2장 주변 친구](02.nearby-friends.md)
 - [4장 분산 메시지 큐](04.distributed-message-queue.md)
+- [7장 호텔 예약 시스템](07.reservation.md)
 - [11장 결제 시스템](11.pay-system.md)
