@@ -4,3 +4,4 @@
 - [4장 분산 메시지 큐](04.distributed-message-queue.md)
 - [7장 호텔 예약 시스템](07.reservation.md)
 - [11장 결제 시스템](11.pay-system.md)
+- [12장 전자 지갑](12.wallet.md)
