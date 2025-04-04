@@ -6,6 +6,7 @@
 - [6장 광고 클릭 이벤트 집계](06.ad-click.md)
 - [7장 호텔 예약 시스템](07.reservation.md)
 - [8장 분산 이메일 서비스](08.distributed-email-service.md)
+- [9장 S3와 유사한 객체 저장소](09.object-storage.md)
 - [10장 실시간 게임 순위표](10.game-rank-board.md)
 - [11장 결제 시스템](11.pay-system.md)
 - [12장 전자 지갑](12.wallet.md)
