@@ -5,6 +5,7 @@
 - [아이템 1 가변성을 제한하라](01.mutable.md)
 - [아이템 2 변수의 스코프를 최소화하라](02.variable-scope.md)
 - [아이템 3 최대한 플랫폼 타입을 사용하지 말라](03.platform-type.md)
+- [아이템 4 inferred 타입으로 리턴하지 말라](04.inferred-type.md)
 
 ### 2장: 가독성
 
