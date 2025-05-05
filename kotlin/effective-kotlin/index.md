@@ -9,6 +9,7 @@
 - [아이템 5 예외를 활용해 코드에 제한을 걸어라](05.exception-block.md)
 - [아이템 7 결과 부족이 발생할 경우 null과 Failure를 사용하라](07.exception-return.md)
 - [아이템 8 적절하게 null을 처리하라](08.null-handling.md)
+- [아이템 9 use를 사용하여 리소스를 닫아라](09.close-resource.md)
 
 ### 2장: 가독성
 
