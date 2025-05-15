@@ -22,6 +22,7 @@
 - [아이템 17 이름 있는 아규먼트를 사용하라](17.named-argument.md)
 - [아이템 19 knowledge를 반복하여 사용하지 말라](19.knowledge.md)
 - [아이템 20 일반적인 알고리즘을 반복해서 구현하지 말라](20.common-algorithm.md)
+- [아이템 21 일반적인 프로퍼티 패턴은 프로퍼티 위임으로 만들어라](21.property-delegate.md)
 
 ## 2부: 코드 설계
 
