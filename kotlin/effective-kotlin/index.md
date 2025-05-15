@@ -21,6 +21,7 @@
 - [아이템 16 프로퍼티는 동작이 아니라 상태를 나타내야 한다](16.property-status.md)
 - [아이템 17 이름 있는 아규먼트를 사용하라](17.named-argument.md)
 - [아이템 19 knowledge를 반복하여 사용하지 말라](19.knowledge.md)
+- [아이템 20 일반적인 알고리즘을 반복해서 구현하지 말라](20.common-algorithm.md)
 
 ## 2부: 코드 설계
 
