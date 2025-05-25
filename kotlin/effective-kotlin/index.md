@@ -32,6 +32,7 @@
 - [아이템 28 API 안정성을 확인하라](28.api-safty.md)
 - [아이템 29 외부 API를 랩(wrap)해서 사용하라](29.api-wrap.md)
 - [아이템 30 요소의 가시성을 최소화하라](30.visibility.md)
+- [아이템 32 추상화 규약을 지켜라](32.abstraction-contract.md)
 
 ## 2부: 코드 설계
 
