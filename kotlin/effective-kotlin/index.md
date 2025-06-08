@@ -52,6 +52,7 @@
 - [아이템 38 연산 또는 액션을 전달할 때는 인터페이스 대신 함수 타입을 사용하라](38.function-type.md)
 - [아이템 39 태그 클래스보다는 클래스 계층을 사용하라](39.avoid-tag-class.md)
 - [아이템 43 API의 필수적이지 않는 부분을 확장 함수로 추출하라](43.extension-function.md)
+- [아이템 44 멤버 확장 함수의 사용을 피하라](44.avoid-member-extension.md)
 
 ## 3부: 효율성
 
