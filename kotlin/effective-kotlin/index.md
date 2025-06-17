@@ -65,3 +65,4 @@
 - [아이템 49 하나 이상의 처리 단계를 가진 경우에는 시퀸스를 사용하라](49.sequence.md)
 - [아이템 50 컬렉션 처리 단계 수를 제한하라](50.collection-processing.md)
 - [아이템 51 성능이 중요한 부분에는 기본 자료형 배열을 사용하라](51.primitive-type.md)
+- [아이템 52 mutable 컬렉션 사용을 고려하라](52.mutable-collection.md)
