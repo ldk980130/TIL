@@ -2,7 +2,7 @@
 
 ## 1장 카프카 개요
 - [1.1 잘란도와 트위터의 카프카 도입 사례](01.kafka-overview/1.1.kafka-introduction.md)
-- [1.3 1.3 카프카의 주요 특징](01.kafka-overview/1.3.kafka-key-feature.md)
+- [1.3 카프카의 주요 특징](01.kafka-overview/1.3.kafka-key-feature.md)
 
 ## 2장 카프카 환경 구성
 
