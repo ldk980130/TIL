@@ -11,6 +11,7 @@
 ## 3장 카프카 기본 개념과 구조
 - [3.1 카프카 기초 다지기](03.kafka-basic-structure/3.1.kafka-basic.md)
 - [3.2 카프카의 핵심 개념](03.kafka-basic-structure/3.2.kafka-core-concept.md)
+- [3.3 프로듀서의 기본 동작과 예제 맛보기](03.kafka-basic-structure/3.3.kafka-producer-basic.md)
 
 ## 4장 카프카의 내부 동작 원리와 구현
 
