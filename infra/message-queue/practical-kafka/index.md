@@ -15,6 +15,7 @@
 - [3.4 컨슈머의 기본 동작과 예제 맛보기](03.kafka-basic-structure/3.4.kafka-consumer.basic.md)
 
 ## 4장 카프카의 내부 동작 원리와 구현
+- [4.1 카프카 리플리케이션](04.kafka-operation-overview/4.1.kafka-replication.md)
 
 ## 5장 프로듀서의 내부 동작 원리와 구현
 
