@@ -17,6 +17,7 @@
 ## 4장 카프카의 내부 동작 원리와 구현
 - [4.1 카프카 리플리케이션](04.kafka-operation-overview/4.1.kafka-replication.md)
 - [4.2 컨트롤러](04.kafka-operation-overview/4.2.kafka-controller.md)
+- [4.3 로그(로그 세그먼트)](04.kafka-operation-overview/4.3.log-segment.md)
 
 ## 5장 프로듀서의 내부 동작 원리와 구현
 
