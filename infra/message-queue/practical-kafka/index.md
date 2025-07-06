@@ -20,7 +20,7 @@
 - [4.3 로그(로그 세그먼트)](04.kafka-operation-overview/4.3.log-segment.md)
 
 ## 5장 프로듀서의 내부 동작 원리와 구현
-- [5.1 파티셔너](05.partioner/5.1.partioner.md)
+- [5.1 파티셔너](05.kafka-producer/5.1.partioner.md)
 
 ## 6장 컨슈머의 내부 동작 원리와 구현
 
