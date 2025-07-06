@@ -21,6 +21,7 @@
 
 ## 5장 프로듀서의 내부 동작 원리와 구현
 - [5.1 파티셔너](05.kafka-producer/5.1.partioner.md)
+- [5.2 프로듀서의 배치](05.kafka-producer/5.2.producer-batch.md)
 
 ## 6장 컨슈머의 내부 동작 원리와 구현
 
