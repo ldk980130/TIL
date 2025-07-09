@@ -23,6 +23,7 @@
 - [5.1 파티셔너](05.kafka-producer/5.1.partioner.md)
 - [5.2 프로듀서의 배치](05.kafka-producer/5.2.producer-batch.md)
 - [5.3 중복 없는 전송](05.kafka-producer/5.3.deduplicated-transfer.md)
+- [5.4 정확히 한 번 전송](05.kafka-producer/5.4.exactly-once.md)
 
 ## 6장 컨슈머의 내부 동작 원리와 구현
 
