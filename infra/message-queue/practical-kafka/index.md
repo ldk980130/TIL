@@ -26,6 +26,7 @@
 - [5.4 정확히 한 번 전송](05.kafka-producer/5.4.exactly-once.md)
 
 ## 6장 컨슈머의 내부 동작 원리와 구현
+- [6.1 컨슈머 오프셋 관리](06.kafka-consumer/6.1.consumer-offset.md)
 
 ## 7장 카프카 운영과 모니터링
 
