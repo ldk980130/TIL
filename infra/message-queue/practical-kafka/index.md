@@ -27,6 +27,7 @@
 
 ## 6장 컨슈머의 내부 동작 원리와 구현
 - [6.1 컨슈머 오프셋 관리](06.kafka-consumer/6.1.consumer-offset.md)
+- [6.2 그룹 코디네이터](06.kafka-consumer/6.2.group-coordinator.md)
 
 ## 7장 카프카 운영과 모니터링
 
