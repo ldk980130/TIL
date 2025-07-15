@@ -29,6 +29,7 @@
 - [6.1 컨슈머 오프셋 관리](06.kafka-consumer/6.1.consumer-offset.md)
 - [6.2 그룹 코디네이터](06.kafka-consumer/6.2.group-coordinator.md)
 - [6.3 스태틱 멤버십](06.kafka-consumer/6.3.static-membership.md)
+- [6.4 컨슈머 파티션 할당 전략](06.kafka-consumer/6.4.consumer-partition-assign.md)
 
 ## 7장 카프카 운영과 모니터링
 
