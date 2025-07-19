@@ -33,6 +33,7 @@
 - [6.5 정확히 한 번 컨슈머 동작](06.kafka-consumer/6.5.exactly-once-read-consumer.md)
 
 ## 7장 카프카 운영과 모니터링
+- [7.1 안정적인 운영을 위한 주키퍼와 카프카 구성](07.kafka-operation/7.1-kafka-configuration-for-stable-operation.md)
 
 ## 8장 카프카 버전 업그레이드와 확장
 
