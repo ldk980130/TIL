@@ -34,6 +34,7 @@
 
 ## 7장 카프카 운영과 모니터링
 - [7.1 안정적인 운영을 위한 주키퍼와 카프카 구성](07.kafka-operation/7.1-kafka-configuration-for-stable-operation.md)
+- [7.2 모니터링 시스템 구성](07.kafka-operation/7.2.kafka-monitoring.md)
 
 ## 8장 카프카 버전 업그레이드와 확장
 
