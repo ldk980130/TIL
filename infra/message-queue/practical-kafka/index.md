@@ -37,6 +37,8 @@
 - [7.2 모니터링 시스템 구성](07.kafka-operation/7.2.kafka-monitoring.md)
 
 ## 8장 카프카 버전 업그레이드와 확장
+- [8.1 카프카 버전 업그레이드를 위한 준비](08.kafka-upgrade/8.1.prepare-upgrade.md)
+- [8.2 주키퍼 의존성이 있는 카프카 롤링 업그레이드](08.kafka-upgrade/8.2.version-upgrade.md)
 
 ## 9장 카프카 보안
 
