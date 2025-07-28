@@ -42,6 +42,7 @@
 - [8.3 카프카의 확장](08.kafka-upgrade/8.3.kafka-extension.md)
 
 ## 9장 카프카 보안
+- [9.1 카프카 보안의 세 가지 요소](09.kafka-security/9.1.kafka-security-three-elements.md)
 
 ## 10장 스키마 레지스트리
 
