@@ -43,6 +43,7 @@
 
 ## 9장 카프카 보안
 - [9.1 카프카 보안의 세 가지 요소](09.kafka-security/9.1.kafka-security-three-elements.md)
+- [9.2 SSL을 이용한 카프카 암호화](09.kafka-security/9.2.kafka-ssl.md)
 
 ## 10장 스키마 레지스트리
 
