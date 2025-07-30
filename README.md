@@ -10,6 +10,7 @@
 - [인프런 강의](kotlin/lecture/index.md)
 - [Kotlin RPC](kotlin/kotlin-rpc.md)
 - 📗[이펙티브 코틀린](kotlin/effective-kotlin/index.md)
+- [KotlinConf 2025](kotlin/kotlinconf-2025/index.md)
 
 ### JAVA
 - JVM
