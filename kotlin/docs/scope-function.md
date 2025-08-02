@@ -1,4 +1,4 @@
-# Scopre function
+# Scope function
 
 ## 코틀린 스코프 함수 (Scope Functions)
 

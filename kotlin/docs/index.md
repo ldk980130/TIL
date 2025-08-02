@@ -2,3 +2,4 @@
 - [class(constructor)](class.md)
 - [K2 Compiler](K2-compiler.md)
 - [Delegated Properties](delegated-property.md)
+- [Scope Function](scope-function.md)
