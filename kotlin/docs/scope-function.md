@@ -33,3 +33,83 @@
 - 스코프 함수 사용 사례가 겹쳐서 어떤 함수를 쓸지는 프로젝트나 팀의 컨벤션에 따라 결정한다.
 - 스코프 함수는 코드를 간결하게 만들지만, 과도하게 쓰면 가독성이 떨어지고 오류를 일으킬 수 있다.
 - 스코프 함수를 중첩하거나 체이닝할 때는 `this`나 `it`의 값이 헷갈릴 수 있어서 조심해야 한다.
+
+## Distinctions
+
+- 각 스코프 함수는 두 가지 주요 차이점이 존재한다.
+  - 컨텍스트 객체 접근 방식 (`this` 또는 `it`)
+  - Return Value
+
+### 컨텍스트 접근 방식
+
+- `this`
+  - `run`, `with`, `apply`는 수신 객체로 context object를 참조한다.
+  - 람다 내부에서 해당 객체 멤버에 접근 가능하므로 코드가 짧아진다.
+  - `this`를 생략 가능하지만 외부 객체와 혼동될 수 있어 객체 멤버에 집중된 작업에 적합하다.
+
+```kotlin
+val adam = Person("Adam").apply { 
+    age = 20 
+    city = "London"
+}
+```
+
+- `it`
+  - `let`, `also`는 람다 인자로 context object를 참조하며 it으로 접근한다.
+  - 객체 멤버를 사용할 땐 항상 `it.`을 명시해야 한다.
+  - 함수 호출 시 인자로 주로 사용하거나 람다 블록 내에 여러 변수를 사용할 때 적합하다.
+
+```kotlin
+fun getRandomInt(): Int {
+    return Random.nextInt(100).also {
+        writeToLog("getRandomInt() generated value $it")
+    }
+}
+```
+
+### Return value
+
+- Context Object 반환
+  - `apply`, `also`는 객체 자기 자신을 반환한다.
+
+```kotlin
+// 반환된 객체를 이어서 체이닝 할 수 있다.
+val numberList = mutableListOf<Double>()
+numberList.also { println("Populating the list") }
+    .apply {
+        add(2.71)
+        add(3.14)
+        add(1.0)
+    }
+    .also { println("Sorting the list") }
+    .sort()
+    
+// 함수에서 해당 객체를 직접 반환할 때 유용하다.
+fun getRandomInt(): Int {
+    return Random.nextInt(100).also {
+        writeToLog("getRandomInt() generated value $it")
+    }
+}
+```
+
+- Lambda 결과 반환
+  - `let`, `run`, `with`는 람다 블록의 결과 값을 반환한다.
+  - 결과를 변수로 할당하거나 결과를 바탕으로 연산을 이어갈 때 적합
+
+```kotlin
+val numbers = mutableListOf("one", "two", "three")
+
+// 결과를 변수로 할당하거나 결과를 바탕으로 연산을 이어갈 때 적합
+val countEndsWithE = numbers.run { 
+    add("four")
+    add("five")
+    count { it.endsWith("e") }
+}
+
+// 반환값이 필요 없다면 단순 임시 스코프를 만들기 위해 사용할 수도 있다.
+with(numbers) {
+    val firstItem = first()
+    val lastItem = last()        
+    println("First item: $firstItem, last item: $lastItem")
+}
+```
