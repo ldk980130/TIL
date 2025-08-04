@@ -113,3 +113,109 @@ with(numbers) {
     println("First item: $firstItem, last item: $lastItem")
 }
 ```
+
+## Functions
+
+### let
+
+- Context Object: 람다 인자 (`it`)
+- 반환 값: 람다 결과
+- 용도
+  - 호출 체인 결과에 여러 동작을 적용할 때
+  - null 체크 후 안전하게 작업할 때
+  - 임시로 변수 범위를 제한하고 싶을 때
+
+```kotlin
+val numbers = mutableListOf("one", "two", "three", "four", "five")
+
+// 호출 체인의 결과에 여러 동작을 수행할 때
+val resultList = numbers.map { it.length }.filter { it > 3 }
+
+// null 체크 후 안전하게 사용
+val firstOrNull = numbers.firstOrNull()?.let {
+    println("첫 번째 원소: $it")
+}
+
+// 임시 변수 범위 제한
+val result = numbers.map { it.length }.filter { it > 3 }.let { lengths ->
+    lengths.sum()
+}
+```
+
+### with
+
+- Context Object:람다 수신자 (`this`)
+- 반환 값:람다 결과
+- 용도:
+  - 객체의 여러 멤버를 연속적으로 사용할 때
+  - 반환값이 필요하지 않을 때
+
+```kotlin
+val builder = StringBuilder()
+with(builder) {
+    append("Hello, ")
+    append("Kotlin!")
+    toString()
+}
+```
+
+### run
+
+- Context Object:람다 수신자 (`this`)
+- 반환 값:람다 결과
+- 용도:
+  - 객체 초기화와 연산을 동시에 할 때
+  - 객체를 확장함수로 바로 사용하고 싶을 때
+
+```kotlin
+val message = StringBuilder().run {
+    append("Kotlin Scope Functions. ")
+    append("run 예제")
+    toString()
+}
+
+```
+
+### apply
+
+- Context Object:람다 수신자 (`this`)
+- 반환 값:객체 자신
+- 용도:
+  - 객체 설정(초기화) 및 연쇄적 설정에 적합
+  - 여러 프로퍼티를 설정한 뒤 객체를 그대로 반환하고 싶을 때
+
+```kotlin
+val person = Person().apply {
+    name = "홍길동"
+    age = 30
+}
+```
+
+### also
+
+- Context Object:람다 인자 (`it`)
+- 반환 값:객체 자신
+- 용도:
+  - 부수 효과(디버깅·로깅 등)를 추가하고 싶을 때
+  - 체인을 유지하면서 작업을 삽입할 때
+
+```kotlin
+val numbers = mutableListOf("one", "two", "three")
+numbers
+    .also { println("초기 값: $it") }
+    .add("four")
+```
+
+### takeIf / takeUnless
+
+- Context Object:람다 인자 (`it`)
+- 반환 값:객체 자신 또는 null
+- 용도:
+  - 조건을 만족할 때만 객체를 반환하거나, 그렇지 않으면 null 반환
+  - 조건부로 체인을 이어가고 싶을 때
+
+```kotlin
+val number = 10
+val even = number.takeIf { it % 2 == 0 }   // 10
+val odd = number.takeUnless { it % 2 == 0 } // null
+```
