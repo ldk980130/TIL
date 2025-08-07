@@ -46,6 +46,7 @@
 - [9.2 SSL을 이용한 카프카 암호화](09.kafka-security/9.2.kafka-ssl.md)
 
 ## 10장 스키마 레지스트리
+- [10.1 스키마의 개념과 유용성](10.schema-registry/10.1.schema-registry-basic.md)
 
 ## 11장 카프카 커넥트
 
