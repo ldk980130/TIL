@@ -47,6 +47,7 @@
 
 ## 10장 스키마 레지스트리
 - [10.1 스키마의 개념과 유용성](10.schema-registry/10.1.schema-registry-basic.md)
+- [10.2 카프카와 스키마 레지스트리](10.schema-registry/10.2.kafka-registry.md)
 
 ## 11장 카프카 커넥트
 
