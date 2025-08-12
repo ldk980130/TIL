@@ -52,6 +52,7 @@
 - [10.4 스키마 레지스트리 호환성](10.schema-registry/10.4.schema-compatibility.md)
 
 ## 11장 카프카 커넥트
+- [11.1 카프카 커넥트의 핵심 개념](11.kafka-connector/11.1.kafka-connector-basic.md)
 
 ## 12장 엔터프라이즈 카프카 아키텍처 구성 사례
 
