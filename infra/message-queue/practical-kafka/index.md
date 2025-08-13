@@ -53,6 +53,7 @@
 
 ## 11장 카프카 커넥트
 - [11.1 카프카 커넥트의 핵심 개념](11.kafka-connector/11.1.kafka-connector-basic.md)
+- [11.2 카프카 커넥트의 내부 동작](11.kafka-connector/11.2.kafka-connector-operation.md)
 
 ## 12장 엔터프라이즈 카프카 아키텍처 구성 사례
 
