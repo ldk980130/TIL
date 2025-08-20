@@ -1,9 +1,10 @@
 # 죽음의 Spring Batch
 
 ## 섹션 1. 스프링 배치 종결의 서막
-- [스프링 배치 핵심 개념](secsion-01/01.spring-batch-core.md)
+- [스프링 배치 핵심 개념](session-01/01.spring-batch-core.md)
 
 ## 섹션 2. 스프링 배치 종결의 첫 걸음
+- [스프링 배치의 두 가지 스텝 유형](session-02/01.step-process-type.md)
 
 ## 섹션3. 파일 처리로 시스템을 처형하라
 
