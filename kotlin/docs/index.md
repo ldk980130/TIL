@@ -4,3 +4,4 @@
 - [Delegated Properties](delegated-property.md)
 - [Scope Function](scope-function.md)
 - [Extensions](extensions.md)
+- [Higher-order functions and lambdas](high-order-function.md)
