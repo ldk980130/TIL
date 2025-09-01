@@ -72,3 +72,80 @@ val intFunction: (Int) -> Int = IntTransformer()
 ### **Inline functions**
 
 - 때론 고차 함수에 유연한 제어 흐름을 제공하는 [인라인 함수](https://kotlinlang.org/docs/inline-functions.html)를 사용하는 것이 유리할 수 있다.
+
+## **Lambda** expressions and anonymous functions
+
+- function literals - 선언되지 않교 표현식으로 즉시 전달되는 함수
+    - 람다 표현식
+    - 익명 함수
+
+```kotlin
+// max는 함수를 인자로 받기에 고차 함수
+max(strings, { a, b -> a.length < b.length })
+```
+
+### Lambda expression syntax
+
+- 람다 표현식은 항상 중괄호로 감싸진다.
+- 매개변수 선언은 중괄호 안에 들어가며 선택적으로 타입을 명시한다.
+- 함수 body는 `→` 뒤에 온다.
+- 람다의 반환 타입이 `Unit`이 아닌 경우 람다 본문 내부의 마지막 표현식이 반환 값으로 처리된다.
+
+```kotlin
+val sum = { x: Int, y: Int -> x + y }
+```
+
+### Passing trailing lambdas
+
+- trailing lambda
+    - 함수 마지막 매개변수가 람다인 경우 람다 식이 괄호 밖에 배치되는데 이러한 구문을 뜻한다.
+    - 람다가 해당 호출의 유일한 인수인 경우 괄호는 완전히 생략할 수 있다.
+
+```kotlin
+run { println("...") }
+```
+
+### it: **implicit** name of a single parameter
+
+- 람다 표현식에서 매개변수가 하나만 있는 경우 `→`를 생략하여 암시적으로 `it`으로 매개변수를 표현할 수 있다.
+
+```kotlin
+ints.filter { it > 0 } // '(it: Int) -> Boolean'
+```
+
+### **Returning a value from a lambda expression**
+
+- 람다에서 qualified return 구문을 통해 명시적으로 값을 반환할 수 있다.
+- 그렇지 않으면 마지막 표현식 값이 암시저기으로 반환된다.
+
+```kotlin
+// 아래 두 표현은 같다
+ints.filter {
+    val shouldFilter = it > 0
+    shouldFilter
+}
+
+ints.filter {
+    val shouldFilter = it > 0
+    return@filter shouldFilter
+}
+```
+
+### **Underscore for unused variables**
+
+- 사용하지 않는 매개변수는 아래와 같이 생략 가능하다.
+
+```kotlin
+map.forEach { (_, value) -> println("$value!") }
+```
+
+### **Destructuring in lambdas**
+
+- 구조 분해 선언(Destructuring Declation)
+    - 하나의 객체에서 여러 변수를 한 번에 선언하는 문법
+    - ex) `val (name, age) = person`
+- 람다 매개변수가 `Pair`나 `Map.Entry` 등일 때 이러한 구조 분해를 이용할 수 있다.
+
+```kotlin
+map.mapValues { (key, value) -> "$value!" }
+```
