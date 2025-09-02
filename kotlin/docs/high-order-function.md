@@ -149,3 +149,40 @@ map.forEach { (_, value) -> println("$value!") }
 ```kotlin
 map.mapValues { (key, value) -> "$value!" }
 ```
+
+### Anonymous functions
+
+- 함수의 반환 타입을 지정할 때 명시적으로 지정해야 하는 경우 익명 함수를 사용할 수 있다.
+  - 익명 함수는 표현식 또는 블록일 수 있다.
+
+```kotlin
+fun(x: Int, y: Int): Int = x + y
+
+fun(x: Int, y: Int): Int {
+    return x + y
+}
+```
+
+- 람다 식과 익명 함수의 또 다른 차이점은 비지역 반환(Non-local return)의 동작 방식에 있다.
+  - 람다 식 내부에서의 `return`은 람다를 감싸고 있는 외부 함수를 종료시킨다.
+  - 반면, 익명 함수 내부에서의 `return`은 해당 익명 함수만을 종료시키고 외부 함수에는 영향을 주지 않는다.
+
+```kotlin
+// 람다식에서의 non-local return 예시
+fun lambdaTest() {
+    listOf(1, 2, 3).forEach {
+        if (it == 2) return  // lambdaTest 함수 전체를 종료시킴 (non-local return)
+        println(it)
+    }
+    println("이 문장은 출력되지 않음")
+}
+
+// 익명 함수에서의 return 예시
+fun anonymousFuncTest() {
+    listOf(1, 2, 3).forEach(fun(value) {
+        if (value == 2) return  // 익명 함수만 종료, forEach는 계속됨 (local return)
+        println(value)
+    })
+    println("이 문장은 정상적으로 출력됨")
+} 
+```
