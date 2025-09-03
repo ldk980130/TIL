@@ -186,3 +186,53 @@ fun anonymousFuncTest() {
     println("이 문장은 정상적으로 출력됨")
 } 
 ```
+
+### **Closures**
+
+- 클로저(Closure)란
+  - 자신을 둘러싼 외부 스코프의 변수 를 포착하는 함수를 의미
+- 람다와 익명 함수가 바로 외부 스코프에 선언된 변수를 포착할 수 있는데 이 때 클로저가 된다.
+
+```kotlin
+var sum = 0
+ints.filter { it > 0 }.forEach {
+    sum += it // 외부 sum 변수를 캡쳐
+}
+print(sum)
+```
+
+### **Function literals with receiver**
+
+> 함수 리터럴이란 이름 없는 함수 표현 자체를 의미 (람다, 익명 함수)
+>
+
+- 리시버가 있는 함수 타입은 특수한 형태의 함수 리터럴로 인스턴스화할 수 있다.
+  - ex) `A.(B) → C`
+- 리시버 객체 (receiver object)
+  - 리시버가 있는 함수 리터럴은 람다에 리시버를 부여할 수 있게 하는 문법이다.
+  - 람다 안에서 리시버의 멤버를 `this` 참조로 사용할 수 있게 되는 것
+  - 이 동작은 함수 본문 내에서 리시버 멤버에 엑세스 할 수 있는 확장 함수 동작과 비슷하다.
+
+```kotlin
+val sum: Int.(Int) -> Int = { other -> plus(other) } // this.plus(other)
+
+val sum = fun Int.(other: Int): Int = this + other // 익명 함수로 표현하면 이와 같다.
+```
+
+- 리시버가 있는 함수 리터럴은 type-safe builder에서 자주 쓰인다.
+
+```kotlin
+class HTML {
+    fun body() { ... }
+}
+
+fun html(init: HTML.() -> Unit): HTML {
+    val html = HTML()  // 리시버 객체 생성
+    html.init() // 파라미터로 전달 받은 Html을 리시버로 가지는 () -> Unit 호출
+    return html
+}
+
+html { // 리시버가 있는 람다 시작
+    body() // html 함수의 init의 매개변수로 body 전달 (Html 클래스의 () -> Unit 타입 멤버 함수)
+}
+```
