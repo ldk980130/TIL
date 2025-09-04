@@ -6,6 +6,7 @@
 ## 섹션 2. 스프링 배치 종결의 첫 걸음
 - [스프링 배치의 두 가지 스텝 유형](session-02/01.step-process-type.md)
 - [잡 파라미터와 스프링 배치 Scope](session-02/02.job-parameters.md)
+- [Spring Batch Listener와 활용](session-02/03.batch-listener.md)
 
 ## 섹션3. 파일 처리로 시스템을 처형하라
 
