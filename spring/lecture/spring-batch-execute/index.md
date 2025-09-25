@@ -10,6 +10,7 @@
 
 ## 섹션3. 파일 처리로 시스템을 처형하라
 - [FlatFileItemReader](session-03/01.flat_file_item_reader.md)
+- [FlatFileItemWriter](session-03/02.flat_file_item_writer.md)
 
 ## 섹션 4. 데이터베이스를 지배하라
 
