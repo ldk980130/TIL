@@ -9,6 +9,8 @@
 - Index
   - [인덱스](index/index.md)
   - [커버링 인덱스](index/covering-index.md)
+- Lock
+  - [metadata lock](lock/metadatalock.md)
 - sql
   - [JOIN](sql/join.md)
 - 📗[Real MySQL](real-my-sql/index.md)
