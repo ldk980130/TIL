@@ -63,6 +63,19 @@ HikariCP는 내부에서 `ConcurrentBag`이라는 구조체로 `Connection`을 �
 4. 존재한다면 리턴하고 없다면 handoffQueue에서 사용 가능한 Connection을 찾음
 5. 있다면 리턴, 없다면 기다리는데 30초가 지나면 Timeout이 발생 (HikariCP default Connection timeout = 30초)
 
+### 자주 쓰는 옵션
+
+- `autoCommit`: 풀에서 반환되는 커넥션의 기본 오토커밋 동작으로 기본 true이며, 프레임워크 트랜잭션을 쓴다면 보통 기본값 유지가 일반적이다.
+- `connectionTimeout`: 풀에서 커넥션을 얻기 위해 대기하는 최대 시간으로 최소 250ms, 기본 30초이며, 가용 커넥션 부족 시 이 시간 경과 후 예외가 난다.
+- `idleTimeout`: 유휴 커넥션이 풀에 머무는 최대 시간으로 minimumIdle < maximumPoolSize인 경우에만 적용되며 기본 10분이다.
+- `keepaliveTime`: DB/네트워크 타임아웃을 방지하기 위한 유휴 커넥션 ping 주기로 maxLifetime보다 작아야 하며, 분 단위 설정이 권장된다.
+- `maxLifetime`: 커넥션 최대 수명으로 기본 30분이며, DB나 인프라가 강제 종료하는 한계보다 “몇 초 더 짧게” 설정할 것을 강력 권장한다.
+- `connectionTestQuery`: JDBC4 isValid() 지원 드라이버면 설정하지 말 것을 권장하며, 레거시 드라이버에서만 사용한다.
+- `minimumIdle`: 유휴 커넥션 최소 수로, 최대 성능/스파이크 대응을 위해 설정을 생략해 고정 크기 풀(maximumPoolSize와 동일)로 운용하는 것을 권장한다.
+- `maximumPoolSize`: 풀의 총 커넥션 상한으로, 이 값에 도달하고 유휴가 없으면 getConnection()은 connectionTimeout까지 대기한다.
+- `metricRegistry`/`healthCheckRegistry`: Dropwizard Metrics/HealthCheck 인스턴스를 연결해 운영 가시성을 높일 수 있다.
+- `poolName`: 로그/JMX에서 식별할 풀 이름 지정으로 운영 관측 시 유용하다.
+
 ## JPA와 Connection
 
 1. 데이터베이스 하나만 사용하는 애플리케이션에서는 `EntityManagerFactory`를 하나만 생성한다.
