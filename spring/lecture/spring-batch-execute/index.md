@@ -15,6 +15,7 @@
 
 ## 섹션 4. 데이터베이스를 지배하라
 - [관계형 데이터베이스 읽고 쓰기](session-04/01.rdb-read-write.md)
+- [JPA ItemReader / ItemWriter](session-04/02.jpa-reader-writer.md)
 
 ## 섹션 5. 배치 스탭을 강탈하라
 
