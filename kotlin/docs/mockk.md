@@ -80,3 +80,128 @@ apiClient.retry()  // 실패
 apiClient.retry()  // 성공
 
 ```
+
+### Spy와 부분 모킹
+
+- 실제 구현과 Mock을 혼합하여 사용할 수 있다.
+
+```kotlin
+// ...
+    @Test
+    fun `이벤트 필터링이 정상 작동해야 한다`() {
+		    val eventRepository = mockk<EventRepository>()
+		    
+        // 실제 EventService 인스턴스 생성, private 호출 기록
+        val eventService = spyk(EventService(eventRepository), recordPrivateCalls = true)
+
+        val events = listOf(
+            Event(id = 1, status = "ACTIVE", createdAt = LocalDateTime.now()),
+            Event(id = 2, status = "INACTIVE", createdAt = LocalDateTime.now().minusDays(1)),
+            Event(id = 3, status = "ACTIVE", createdAt = LocalDateTime.now().minusDays(2))
+        )
+
+        every { eventRepository.findAll() } returns events
+
+        // 실제 filterActiveEvents() 메서드 호출
+        val result = eventService.getActiveEvents()
+
+        // private 메서드 호출 검증
+        verify { eventService["filterByStatus"](events, "ACTIVE") }
+        result.size shouldBe 2
+    }
+}
+
+```
+
+### 인자 값 캡쳐링 (Capturing)
+
+- `CapturingSlot`로 호출된 인자값을 추출할 수 있다.
+
+```kotlin
+// ...
+    @Test
+    fun `전송된 이메일 내용을 검증해야 한다`() {
+        val emailSlot = slot<Email>()
+
+        every { emailRepository.save(capture(emailSlot)) } returns Email(id = 1, to = "", subject = "")
+
+        // When
+        emailService.sendWelcomeEmail("newuser@example.com")
+
+        // Then - 실제로 저장된 Email 객체 내용 검증
+        val capturedEmail = emailSlot.captured
+        capturedEmail.to shouldBe "newuser@example.com"
+        capturedEmail.subject shouldContain "환영"
+        capturedEmail.body shouldContain "가입을 환영합니다"
+    }
+}
+
+```
+
+- `MutableList`로 여러 호출을 기록할 수도 있다.
+
+```kotlin
+@Test
+fun `여러 번의 로깅 호출을 모두 기록해야 한다`() {
+    val logMessages = mutableListOf<String>()
+    val logger = mockk<Logger>()
+
+    every { logger.info(capture(logMessages)) } just runs
+
+    // When
+    val userService = UserService(logger)
+    userService.registerUser("john@example.com")
+    userService.registerUser("jane@example.com")
+
+    // Then
+    logMessages.size shouldBe 2
+    logMessages[0] shouldContain "john@example.com"
+    logMessages[1] shouldContain "jane@example.com"
+}
+
+```
+
+### 확장함수 및 정적함수 모킹
+
+```kotlin
+// 모듈 레벨 확장함수 (String.kt 파일에 정의)
+fun String.isValidEmail(): Boolean {
+    return this.contains("@")
+}
+
+// 테스트
+@Test
+fun `확장함수 모킹`() {
+    val user = User("test@example.com")
+    
+    // 모듈 전체를 mock 대상으로 지정
+    mockkStatic("com.example.StringKt")
+    
+    every { user.email.isValidEmail() } returns false
+    
+    val result = user.email.isValidEmail()
+    result shouldBe false
+    
+    unmockkStatic("com.example.StringKt")
+}
+
+```
+
+```kotlin
+// Utils.kt
+fun generateOrderId(): String = "ORD-${System.currentTimeMillis()}"
+
+// 테스트
+@Test
+fun `탑레벨 함수 모킹`() {
+    mockkStatic(::generateOrderId)
+    
+    every { generateOrderId() } returns "ORD-MOCK-001"
+    
+    val orderId = generateOrderId()
+    orderId shouldBe "ORD-MOCK-001"
+    
+    unmockkStatic(::generateOrderId)
+}
+
+```
