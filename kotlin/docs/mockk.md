@@ -205,3 +205,81 @@ fun `탑레벨 함수 모킹`() {
 }
 
 ```
+
+## 호출 검증
+
+### 호출 횟수 검증
+
+```kotlin
+// 정확히 3번 호출
+verify(exactly = 3) { emailService.sendEmail(any(), any()) }
+
+// 최소 2번 이상
+verify(atLeast = 2) { emailService.sendEmail(any(), any()) }
+
+// 최대 4번 이하
+verify(atMost = 4) { emailService.sendEmail(any(), any()) }
+
+// 0번 (호출 안 됨)
+verify(exactly = 0) { emailService.sendEmail("never@example.com", any()) }
+```
+
+### 호출 순서 검증
+
+```kotlin
+// ...
+every { repository.findUser(any()) } returns User(id = 1, name = "홍길동")
+every { cache.put(any(), any()) } just runs
+
+// ...
+
+// 특정 순서대로 호출되었는지 확인
+verifySequence {
+    repository.findUser(1)
+    cache.put(1, any())  // repository 호출 후 cache 호출
+}
+
+// verifyOrder는 순서만 확인, 사이에 다른 호출 가능
+verifyOrder {
+    repository.findUser(1)
+    cache.put(1, any())
+}
+```
+
+## 트러블 슈팅 및 주의사항
+
+### 인라인 함수는 모킹 불가
+
+- 인라인 함수는 컴파일 시점에 호출 코드로 대체 되기 때문에 모킹이 불가능하다.
+- 다른 JVM 기반 모킹 프레임워크들은 대부분 마찬가지다.
+
+### private 함수 모킹
+
+- `private` 함수 모킹을 위해선 다음 두 가지가 필요하다.
+    - `spyk`로 실제 객체와 함께 사용
+    - `recordPrivateCalls = true` 옵션
+
+```kotlin
+class Calculator {
+    fun add(a: Int, b: Int): Int = internalAdd(a, b)
+    
+    private fun internalAdd(a: Int, b: Int): Int = a + b
+}
+
+@Test
+fun `private 함수 모킹`() {
+    val calc = spyk(Calculator(), recordPrivateCalls = true)
+
+    every { calc["internalAdd"](any(), any()) } returns 100
+
+    val result = calc.add(5, 3)
+    result shouldBe 100
+
+    verify { calc["internalAdd"](5, 3) }
+}
+
+```
+
+- 가능은 하지만 `private` 함수에 대한 모킹은 테스트에서 권장하지 않는다.
+- `private` 함수를 모킹하거나 검증해야할 정도면 퍼블릭 함수 또는 별도 클래스로의 분리를 추천한다.
+
