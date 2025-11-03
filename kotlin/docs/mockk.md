@@ -283,3 +283,52 @@ fun `private 함수 모킹`() {
 - 가능은 하지만 `private` 함수에 대한 모킹은 테스트에서 권장하지 않는다.
 - `private` 함수를 모킹하거나 검증해야할 정도면 퍼블릭 함수 또는 별도 클래스로의 분리를 추천한다.
 
+### Generic 타입 주의
+
+```kotlin
+// 문제: relaxed mock에서 generic 타입 ClassCastException
+val service = mockk<GenericService<User>>(relaxed = true)
+```
+
+- relaxed = true 옵션은 mock 객체에서 기본값을 반환하도록 해준다.
+- 하지만 제네릭 타입이 포함된 경우 MockK가 타입을 제대로 인식하지 못하면 `ClassCastException`이 발생한다.
+- 이러한 경우 명시적으로 모킹을 해서 알맞은 타입 객체를 반환하도록 해야 한다.
+
+```kotlin
+// 해결: 명시적 stubbing
+val service = mockk<GenericService<User>>()
+every { service.get() } returns User(id = 1, name = "홍길동")
+```
+
+### 생성자 파라미터가 있는 생성자 모킹
+
+- 특정 생성자 인자를 가진 객체를 모킹하고 싶을 때 아래와 같이 할 수 있다.
+
+```kotlin
+class OrderProcessor(private val baseDiscount: Double) {
+    fun applyDiscount(price: Double): Double = price * (1 - baseDiscount)
+}
+
+@Test
+fun `특정 생성자만 모킹`() {
+    mockkConstructor(OrderProcessor::class)
+
+    // 매개변수 0.1인 생성자만 모킹
+    every { 
+        constructedWith<OrderProcessor>(EqMatcher(0.1)).applyDiscount(any()) 
+    } returns 8000
+
+    val processor = OrderProcessor(0.1)
+    processor.applyDiscount(10000) shouldBe 8000
+}
+
+```
+
+- `mockkConstructor` - 지정한 클래스의 모든 생성자를 모킹 대상으로 지정
+- `constructedWith<Type>(EqMatcher(…)).applyDiscount(…)` - EqMatcher에 전달된 파라미터 값인 경우에만 해당 메서드를 모킹
+  - 위 예제 코드에선 0.1로 생성된 `OrderProcessor`에 대해서만 `applyDiscount` 메서드가 8000을 반환한다.
+
+## 참고 자료
+
+- [**공식 문서**](https://mockk.io/)
+- [**Github Repository/Issues**](https://github.com/mockk/mockk)
