@@ -17,6 +17,7 @@
 - [관계형 데이터베이스 읽고 쓰기](session-04/01.rdb-read-write.md)
 - [JPA ItemReader / ItemWriter](session-04/02.jpa-reader-writer.md)
 - [NoSQL 읽고 쓰기 - MongoDB](session-04/03.mongodb-reader-writer.md)
+- [NoSQL 읽고 쓰기 - Redis](session-04/04.redis-reader-writer.md)
 
 ## 섹션 5. 배치 스탭을 강탈하라
 
