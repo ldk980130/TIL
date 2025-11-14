@@ -19,6 +19,7 @@
 - [NoSQL 읽고 쓰기 - MongoDB](session-04/03.mongodb-reader-writer.md)
 - [NoSQL 읽고 쓰기 - Redis](session-04/04.redis-reader-writer.md)
 - [Spring Data Repository 추상화](session-04/05.spring-data-repository.md)
+- [ItemWriter와 ItemReader 통합](session-04/06.reader-writer-integration.md)
 
 ## 섹션 5. 배치 스탭을 강탈하라
 
