@@ -22,6 +22,7 @@
 - [ItemWriter와 ItemReader 통합](session-04/06.reader-writer-integration.md)
 
 ## 섹션 5. 배치 스탭을 강탈하라
+- [ItemStream](session-05/01.itemstream.md)
 
 ## 섹션 6. 스프링 배치를 정복하다
 
