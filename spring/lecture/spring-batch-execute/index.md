@@ -27,6 +27,7 @@
 - [FaultTolerant](session-05/03.fault-tolerant.md)
 
 ## 섹션 6. 스프링 배치를 정복하다
+- [Job과 메타데이터 저장소](session-06/01.job-metadata.md)
 
 ## 섹션 7. 스프링 배치의 최전선
 
