@@ -28,6 +28,7 @@
 
 ## 섹션 6. 스프링 배치를 정복하다
 - [Job과 메타데이터 저장소](session-06/01.job-metadata.md)
+- [배치 실행 진입점과 Spring Batch 자동 구성](session-06/02.batch-launch-auto-config.md)
 
 ## 섹션 7. 스프링 배치의 최전선
 
