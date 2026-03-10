@@ -33,5 +33,6 @@
 - [Flow - 조건부 Step 실행 흐름 제어](session-06/04.flow.md)
 
 ## 섹션 7. 스프링 배치의 최전선
+- [Multi-threaded Step](session-07/01.multi-threaded-step.md)
 
 ## 섹션 8. 최후의 버그까지 박멸하라
