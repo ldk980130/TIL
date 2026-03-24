@@ -36,5 +36,6 @@
 - [Multi-threaded Step](session-07/01.multi-threaded-step.md)
 - [Local Partitioning](session-07/02.local-partitioning.md)
 - [Remote Partitioning](session-07/03.remote-partitioning.md)
+- [Remote Chunking](session-07/04.remote-chunking.md)
 
 ## 섹션 8. 최후의 버그까지 박멸하라
