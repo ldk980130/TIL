@@ -39,3 +39,4 @@
 - [Remote Chunking](session-07/04.remote-chunking.md)
 
 ## 섹션 8. 최후의 버그까지 박멸하라
+- [Spring Batch Test](session-08/01.batch-testing.md)
