@@ -1,5 +1,8 @@
 # INDEX
 
+### AI
+- 📗[AI 에이전틱 엔지니어링](ai/ai-agentic-engineering/index.md)
+
 ### SPRING
 - [공식 문서](spring/docs/index.md)
 - [인프런 강의](spring/lecture/index.md)
