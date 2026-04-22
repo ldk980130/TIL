@@ -44,6 +44,7 @@
 - 리눅스
   - [명령어](infra/linux/command.md)
 - [NGINX](infra/nginx/index.md)
+- [Kubernetes](infra/kubernetes/index.md)
 - [Message Queue](infra/message-queue/index.md)
   - 📗 [실전 카프카 개발부터 운영까지](infra/message-queue/practical-kafka/index.md)
 - 📗[도커 컨테이너 빌드 업](infra/docker_container_buildup/index.md)
