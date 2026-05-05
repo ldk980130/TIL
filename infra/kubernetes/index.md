@@ -5,3 +5,4 @@
 - [03. Working with Kubernetes Objects](03.working-with-objects.md)
 - [04. Deployment](04.deployment.md)
 - [05. Service](05.service.md)
+- [06. Ingress](06.ingress.md)
