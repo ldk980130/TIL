@@ -7,3 +7,4 @@
 - [05. Service](05.service.md)
 - [06. Ingress](06.ingress.md)
 - [07. Gateway API](07.gateway.md)
+- [08. Pod](08.pod.md)
