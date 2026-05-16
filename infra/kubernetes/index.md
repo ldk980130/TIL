@@ -9,3 +9,4 @@
 - [07. Gateway API](07.gateway.md)
 - [08. Pod](08.pod.md)
 - [09. Container Lifecycle Hooks](09.container-lifecycle-hooks.md)
+- [10. Horizontal Pod Autoscaler](10.horizontal-pod-autoscaler.md)
