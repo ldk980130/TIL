@@ -10,3 +10,4 @@
 - [08. Pod](08.pod.md)
 - [09. Container Lifecycle Hooks](09.container-lifecycle-hooks.md)
 - [10. Horizontal Pod Autoscaler](10.horizontal-pod-autoscaler.md)
+- [11. Disruptions](11.disruptions.md)
