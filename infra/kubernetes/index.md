@@ -12,3 +12,4 @@
 - [10. Horizontal Pod Autoscaler](10.horizontal-pod-autoscaler.md)
 - [11. Disruptions](11.disruptions.md)
 - [12. ConfigMap](12.configmap.md)
+- [13. Secret](13.secret.md)
