@@ -14,3 +14,4 @@
 - [12. ConfigMap](12.configmap.md)
 - [13. Secret](13.secret.md)
 - [14. Liveness, Readiness, Startup Probes](14.liveness-readiness-startup-probes.md)
+- [15. Resource Management](15.manage-resources.md)
