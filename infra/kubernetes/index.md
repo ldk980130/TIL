@@ -16,3 +16,4 @@
 - [14. Liveness, Readiness, Startup Probes](14.liveness-readiness-startup-probes.md)
 - [15. Resource Management](15.manage-resources.md)
 - [16. Pod QoS Classes](16.pod-qos.md)
+- [17. Node-pressure Eviction](17.node-pressure-eviction.md)
