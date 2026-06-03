@@ -17,3 +17,4 @@
 - [15. Resource Management](15.manage-resources.md)
 - [16. Pod QoS Classes](16.pod-qos.md)
 - [17. Node-pressure Eviction](17.node-pressure-eviction.md)
+- [18. Spring Boot — Kubernetes Probes](18.spring-boot-kubernetes-probes.md)
