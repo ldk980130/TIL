@@ -5,3 +5,4 @@
 - [03. Redis Client](03.redis-client.md)
 - [04. Distributed Locks with Redis](04.redlock.md)
 - [05. Spring Session + Redis Cluster CROSSSLOT 트러블슈팅](05.spring-session-crossslot.md)
+- [06. Redis 재고 관리 방식](06.stock-management.md)
