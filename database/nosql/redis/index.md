@@ -7,3 +7,4 @@
 - [05. Spring Session + Redis Cluster CROSSSLOT 트러블슈팅](05.spring-session-crossslot.md)
 - [06. Redis 재고 관리 방식](06.stock-management.md)
 - [07. Redis Transaction](07.transaction.md)
+- [08. Lua Scripting](08.lua-scripting.md)
