@@ -6,6 +6,7 @@
   - [MySQL(InnoDB) Lock](concurrency-control/lock.md)
   - [Lock $ 2PL](concurrency-control/2pl.md)
   - [MVCC](concurrency-control/mvcc.md)
+  - [Locking Reads (FOR UPDATE / SKIP LOCKED)](concurrency-control/locking-reads.md)
 - Index
   - [인덱스](index/index.md)
   - [커버링 인덱스](index/covering-index.md)
