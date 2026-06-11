@@ -55,6 +55,7 @@
 ### DATABASE
 - [MySQL](database/mysql/index.md)
   - 📗[Real MySQL](database/mysql/real-my-sql/index.md)
+- [PostgreSQL](database/postgresql/index.md)
 - NoSQL
   - [Redis](database/nosql/redis/index.md)
   - 📗[개발자를 위한 레디스](database/nosql/redis-for-developer/index.md)
