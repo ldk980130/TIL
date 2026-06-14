@@ -62,6 +62,7 @@
 - [파티셔닝, 샤딩, 레플리케이션](database/distributed-data/partitioning&sharding&replication.md)
 - [논리/물리 샤드와 무중단 리샤딩](database/distributed-data/logical-physical-shard.md)
 - [Vitess (MySQL 수평 샤딩)](database/distributed-data/vitess.md)
+- [리밸런싱 전략](database/distributed-data/rebalancing.md)
 - [데드락 해결기](database/deadlock-troubleshooting.md)
 - 📗 [데이터 중심 애플리케이션 설계](database/data-intensive-application-design/index.md)
 
