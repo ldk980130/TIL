@@ -61,6 +61,7 @@
   - 📗[개발자를 위한 레디스](database/nosql/redis-for-developer/index.md)
 - [파티셔닝, 샤딩, 레플리케이션](database/distributed-data/partitioning&sharding&replication.md)
 - [논리/물리 샤드와 무중단 리샤딩](database/distributed-data/logical-physical-shard.md)
+- [Vitess (MySQL 수평 샤딩)](database/distributed-data/vitess.md)
 - [데드락 해결기](database/deadlock-troubleshooting.md)
 - 📗 [데이터 중심 애플리케이션 설계](database/data-intensive-application-design/index.md)
 
