@@ -75,6 +75,8 @@
 - 📗[Tidy First?](design/tidy-first/index.md)
 - [클린아키텍처 애매한 부분 정리해드립니다](design/NHN_FORWARD22_clean_architecture.md)
 - [소프트웨어와 복잡성](design/software&complexity.md)
+- 회복탄력성(Resilience)
+  - [재시도 (Retry)](design/resilience/retry.md)
 
 ### NETWORK
 - [http](network/http/index.md)
