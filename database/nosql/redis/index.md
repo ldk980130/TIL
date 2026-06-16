@@ -9,3 +9,4 @@
 - [07. Redis Transaction](07.transaction.md)
 - [08. Lua Scripting](08.lua-scripting.md)
 - [09. Redisson 분산락 내부](09.redisson-lock.md)
+- [10. Pipelining](10.pipelining.md)
