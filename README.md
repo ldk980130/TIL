@@ -65,6 +65,7 @@
 - [리밸런싱 전략](database/distributed-data/rebalancing.md)
 - [데드락 해결기](database/deadlock-troubleshooting.md)
 - [원자적 쓰기로 동시성·멱등 제어](database/atomic-write-concurrency.md)
+- [낙관적 락 (Optimistic Locking)](database/optimistic-lock.md)
 - 📗 [데이터 중심 애플리케이션 설계](database/data-intensive-application-design/index.md)
 
 ### DESIGN

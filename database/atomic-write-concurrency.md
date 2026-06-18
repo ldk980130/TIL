@@ -69,7 +69,7 @@ ON CONFLICT (key) DO UPDATE SET n = counter.n + EXCLUDED.n;
 | 갈래 | 기법 | 특징 | 노트 |
 |---|---|---|---|
 | 비관적 락 | `FOR UPDATE` / `SKIP LOCKED` | 잠그고 진행, 직렬화 안전 | [locking-reads](mysql/concurrency-control/locking-reads.md) |
-| 낙관적 락 | `@Version` + 재시도 | 충돌 시 재시도, 고경합 retry storm | (예정) |
+| 낙관적 락 | `@Version` + 재시도 | 충돌 시 재시도, 고경합 retry storm | [optimistic-lock](optimistic-lock.md) |
 | **원자적 쓰기** | 조건부 UPDATE · UNIQUE · upsert | 단일 문장 원자성, 락 최소 | (이 노트) |
 | 범위 제약 | exclusion constraint | 구간 겹침 선언적 금지(PG) | [exclusion-constraint](postgresql/exclusion-constraint.md) |
 
