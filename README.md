@@ -79,6 +79,7 @@
 - [소프트웨어와 복잡성](design/software&complexity.md)
 - 회복탄력성(Resilience)
   - [재시도 (Retry)](design/resilience/retry.md)
+  - [서킷 브레이커 (Circuit Breaker)](design/resilience/circuit-breaker.md)
 
 ### NETWORK
 - [http](network/http/index.md)
