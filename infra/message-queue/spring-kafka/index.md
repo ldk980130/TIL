@@ -6,3 +6,4 @@
 ## 단계별 정리
 
 - [1. 개요와 환경 설정](01.spring-kafka-intro.md)
+- [2. KafkaTemplate으로 메시지 발행](02.kafka-template-producer.md)
