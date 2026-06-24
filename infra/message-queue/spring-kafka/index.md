@@ -8,3 +8,4 @@
 - [1. 개요와 환경 설정](01.spring-kafka-intro.md)
 - [2. KafkaTemplate으로 메시지 발행](02.kafka-template-producer.md)
 - [3. @KafkaListener로 메시지 소비](03.kafka-listener-consumer.md)
+- [4. 직렬화 / 역직렬화](04.serialization.md)
