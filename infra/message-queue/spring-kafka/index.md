@@ -9,3 +9,4 @@
 - [2. KafkaTemplate으로 메시지 발행](02.kafka-template-producer.md)
 - [3. @KafkaListener로 메시지 소비](03.kafka-listener-consumer.md)
 - [4. 직렬화 / 역직렬화](04.serialization.md)
+- [5. 에러 핸들링과 재시도·DLT](05.error-handling-retry.md)
