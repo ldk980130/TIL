@@ -11,3 +11,4 @@
 - [4. 직렬화 / 역직렬화](04.serialization.md)
 - [5. 에러 핸들링과 재시도·DLT](05.error-handling-retry.md)
 - [6. 오프셋 커밋과 AckMode](06.offset-commit-ack.md)
+- [7. 컨테이너 동시성과 리밸런싱](07.concurrency-rebalance.md)
